@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto de tipeo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="texto"></h1>
+    </div>
+
+
+    <script>
+        let i = 0;
+        let txt = "Bienvenido a Código Web";
+        let speed = 80;
+
+        function typeWrite() {
+            if (i < txt.length) {
+                document.querySelector("#texto").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWrite, speed)
+            }
+        }
+
+        typeWrite();
+    </script>
+</body>
+
+</html>

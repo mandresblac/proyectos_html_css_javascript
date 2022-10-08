@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-sign">
+            <header>
+                <h1>QUIZ GAME</h1>
+                <p>Pon a prueba tus conocimientos</p>
+                <a href="#" onclick="cambiar(this)">Iniciar Sesión</a>
+            </header>
+
+            <div class="info">
+
+                <form action="" class="sign-up" id="sign-up">
+                    <h2>CREAR CUENTA</h2>
+                    <div class="entrada">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Nombre" class="campo">
+                    </div>
+                    <div class="entrada">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Correo Electrónico" class="campo">
+                    </div>
+                    <div class="entrada">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Contraseña" class="campo">
+                    </div>
+
+                    <input type="submit" name="crear" value="Crear Cuenta" class="btn-sign">
+                </form>
+
+                <form action="" class="sign-in" id="sign-in">
+                    <h2>INICIAR SESIÓN</h2>
+                    <div class="entrada">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Correo Electrónico" class="campo">
+                    </div>
+                    <div class="entrada">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Contraseña" class="campo">
+                    </div>
+
+                    <input type="submit" name="iniciar" value="Iniciar Sesión" class="btn-sign">
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

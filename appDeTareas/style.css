@@ -1,0 +1,144 @@
+/* Reseteo básico inicial del navegador */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* root nos sirve para colocar todas las variables de colores que vamos a tener */
+:root {
+  --white: #fafafb;
+  --purple: #9a67ea;
+  --blue-light: #04d4c3;
+  --blue-dark: #2a73c2;
+  --green: #2c7b90;
+}
+
+body {
+  /* Degradado o gradiente */
+  background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+  
+  /* Para poder hacer el degradado o gradiente en toda la pantalla */
+  height: 100vh;
+
+  /* fuente Prompt */
+  font-family: "Prompt", sans-serif;
+}
+
+.container {
+  /* Para separar el elemento de los bordes laterales */
+  max-width: 80%;
+
+  width: 400px;
+  height: 600px;
+
+  /* Para centrar el elemento utilizamos margin: 0 (para top y bottom) y auto (para left y right) que es lo mismo que si utilizáramos las propiedades margin-left: auto; y margin-right: auto;  */
+  margin: 0 auto;
+}
+
+/* ******************************* PERFIL ******************************* */
+
+.perfil h1 {
+  color: var(--white);
+}
+
+.perfil span {
+  color: var(--white);
+
+  /* Para dar un espaciado entre las palabras */
+  letter-spacing: 1px;
+}
+
+#fecha {
+  color: var(--white);
+  padding: 50px 0 5px 0;
+}
+
+/* ******************************* AGREGAR TAREA ******************************* */
+
+.agregar-tarea {
+  background-color: var(--white);
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 70px;
+  margin: 40px 0;
+}
+
+.agregar-tarea input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--white);
+}
+
+.agregar-tarea i {
+  /* Para aumentar tamaño de iconos se utiliza font-size y no width porque no lo detecta */
+  font-size: 50px;
+
+  color: var(--purple);
+}
+
+.agregar-tarea i:hover {
+  /* Aumenta el tamaño del boton cuando se pasa el mouse por encima */
+  transform: scale(1.1);
+
+  /* Pone una manita cuando se pasa el mouse por encima */
+  cursor: pointer;
+}
+
+/* Para modificar la propiedad placeholder de un elemento input  */
+.agregar-tarea input::placeholder {
+  font-size: 1.1rem;
+  color: var(--purple);
+}
+
+/* ******************************* SECCIÓN TAREA ******************************* */
+
+.seccion-tarea h3 {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.seccion-tarea li {
+  /* Degradado o gradiente */
+  background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+
+  display: flex;
+  border-radius: 15px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Separación entre elementos */
+  margin: 5px 0;
+
+  color: var(--white);
+}
+
+.seccion-tarea i{
+  font-size: 25px;
+}
+
+.seccion-tarea i:hover {
+  color: var(--blue-light);
+  cursor: pointer;
+}
+
+/* El simbolo > indica que p esta dentro de un li, li esta dentro de un ul, ul esta dentro de .sección-tarea,
+OJO sin el > no toma los estilos */
+.seccion-tarea > ul p {
+  font-size: 1.2rem;
+}
+
+/* Para generar la ralla de tachado sobre el texto  */
+.line-through {
+  text-decoration: line-through;
+  color: var(--blue-light);
+}
+
+
+

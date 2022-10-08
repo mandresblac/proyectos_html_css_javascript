@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #293462;
+    font-family: sans-serif;
+}
+
+#container{
+    /* Para centrar el elemento hijo que es #texto, tanto horizontal como vericalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#texto {
+    color: white;
+}

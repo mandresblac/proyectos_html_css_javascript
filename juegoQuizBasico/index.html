@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>QUIZ GAME</h1>
+    <h4>Juego de capitales</h4>
+  </header>
+
+  <div class="container">
+    <section id="p0">
+      <h3>1- ¿Cual es la capital de Italia?</h3>
+      <label>
+        <input type="radio" value="1" name="p0" onclick="respuesta(0, this)">Turin
+      </label>
+      <label>
+        <input type="radio" value="2" name="p0" onclick="respuesta(0, this)">Napoles
+      </label>
+      <label for="">
+        <input type="radio" value="3" name="p0" onclick="respuesta(0, this)">Roma
+      </label>
+    </section>
+
+    <section id="p1">
+      <h3>2- ¿Cual es la capital de Noruega?</h3>
+      <label>
+        <input type="radio" value="1" name="p1" onclick="respuesta(1, this)">Oslo
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="respuesta(1, this)">Bucarest
+      </label>
+      <label for="">
+        <input type="radio" value="3" name="p1" onclick="respuesta(1, this)">Madrid
+      </label>
+    </section>
+
+    <section id="p2">
+      <h3>3- ¿Cual es la capital de Perú?</h3>
+      <label>
+        <input type="radio" value="1" name="p2" onclick="respuesta(2, this)">La paz
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="respuesta(2, this)">Cuidad del Perú
+      </label>
+      <label for="">
+        <input type="radio" value="3" name="p2" onclick="respuesta(2, this)">Lima
+      </label>
+    </section>
+
+    <section id="p3">
+      <h3>4- ¿Cual es la capital de Suecia?</h3>
+      <label>
+        <input type="radio" value="1" name="p3" onclick="respuesta(3, this)">Gotemburdo
+      </label>
+      <label>
+        <input type="radio" value="2" name="p3" onclick="respuesta(3, this)">Estocolmo
+      </label>
+      <label for="">
+        <input type="radio" value="3" name="p3" onclick="respuesta(3, this)">Lund
+      </label>
+    </section>
+
+    <section id="p4">
+      <h3>5- ¿Cual es la capital de Canada?</h3>
+      <label>
+        <input type="radio" value="1" name="p4" onclick="respuesta(4, this)">Camberra
+      </label>
+      <label>
+        <input type="radio" value="2" name="p4" onclick="respuesta(4, this)">Toronto
+      </label>
+      <label>
+        <input type="radio" value="3" name="p4" onclick="respuesta(4, this)">Ottawa
+      </label>
+    </section>
+
+    <button onclick="corregir()">CORREGIR</button>
+    <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
