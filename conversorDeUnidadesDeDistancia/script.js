@@ -27,56 +27,54 @@ function convertir() {
     numero = valor.value;
     numero = parseFloat(numero);
 
+    //Kilometros
     if (unidad1.value == "kilometro" && unidad2.value == "kilometro") {
         resultado = numero * 1;
-        txtResultado.innerHTML = `${numero} Kilometro/s equivalen a ${resultado} Kilometro/s`;
+        txtResultado.innerHTML = `${numero} Kilometro/s <br> equivalen a <br> ${resultado} Kilometro/s`;
     }
 
     if (unidad1.value == "kilometro" && unidad2.value == "metro") {
         resultado = numero * 1000;
-        txtResultado.innerHTML = `${numero} Kilometro/s equivalen a ${resultado} Metro/s`;
+        txtResultado.innerHTML = `${numero} Kilometro/s <br> equivalen a <br> ${resultado} Metro/s`;
     }
 
     if (unidad1.value == "kilometro" && unidad2.value == "centimetro") {
         resultado = numero * 100000;
-        txtResultado.innerHTML = `${numero} Kilometro/s equivalen a ${resultado} Centimetro/s`;
+        txtResultado.innerHTML = `${numero} Kilometro/s <br> equivalen a <br> ${resultado} Centimetro/s`;
     }
 
 
-
+    //Metros
     if (unidad1.value == "metro" && unidad2.value == "kilometro") {
-        resultado = numero / 1000;
-        txtResultado.innerHTML = `${numero} Metro/s equivalen a ${resultado} Kilometro/s`;
+        resultado = numero / 1000   ;
+        txtResultado.innerHTML = `${numero} Metro/s <br> equivalen a <br> ${resultado} Kilometro/s`;
     }
 
     if (unidad1.value == "metro" && unidad2.value == "metro") {
         resultado = numero * 1;
-        txtResultado.innerHTML = `${numero} Metro/s equivalen a ${resultado} Metro/s`;
+        txtResultado.innerHTML = `${numero} Metro/s <br> equivalen a <br> ${resultado} Metro/s`;
     }
 
     if (unidad1.value == "metro" && unidad2.value == "centimetro") {
         resultado = numero * 100;
-        txtResultado.innerHTML = `${numero} Metro/s equivalen a ${resultado} Centimetro/s`;
+        txtResultado.innerHTML = `${numero} Metro/s <br> equivalen a <br> ${resultado} Centimetro/s`;
     }
 
 
-
+    //Centimetros
     if (unidad1.value == "centimetro" && unidad2.value == "kilometro") {
         resultado = numero / 100000;
-        txtResultado.innerHTML = `${numero} Centimetro/s equivalen a ${resultado} Kilometro/s`;
+        txtResultado.innerHTML = `${numero} Centimetro/s <br> equivalen a <br> ${resultado} Kilometro/s`;
     }
 
     if (unidad1.value == "centimetro" && unidad2.value == "metro") {
         resultado = numero / 100;
-        txtResultado.innerHTML = `${numero} Centimetrometro/s equivalen a ${resultado} Metro/s`;
+        txtResultado.innerHTML = `${numero} Centimetrometro/s <br> equivalen a <br> ${resultado} Metro/s`;
     }
 
     if (unidad1.value == "centimetro" && unidad2.value == "centimetro") {
         resultado = numero * 1;
-        txtResultado.innerHTML = `${numero} Centimetro/s equivalen a ${resultado} Centimetro/s`;
+        txtResultado.innerHTML = `${numero} Centimetro/s <br> equivalen a <br> ${resultado} Centimetro/s`;
     }
-}
-
-
-
+};
 
