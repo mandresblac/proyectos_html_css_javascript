@@ -69,7 +69,7 @@ function convertir() {
 
     if (unidad1.value == "centimetro" && unidad2.value == "metro") {
         resultado = numero / 100;
-        txtResultado.innerHTML = `${numero} Centimetrometro/s <br> equivalen a <br> ${resultado} Metro/s`;
+        txtResultado.innerHTML = `${numero} Centimetro/s <br> equivalen a <br> ${resultado} Metro/s`;
     }
 
     if (unidad1.value == "centimetro" && unidad2.value == "centimetro") {
