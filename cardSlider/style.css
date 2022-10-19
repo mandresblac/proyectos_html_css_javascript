@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+web:wght@200;300;400;600&display=swap");
+
+* {
+  margin: 0;
+  font-family: 'Titillium Web';
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+
+}
+
+.card {
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #ede9e7;
+  text-align: center;
+  padding: 30px;
+  color: #018980;
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+.card .container-img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.card .container-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #018980;
+}
+
+.card .nombre {
+  color: #000;
+  letter-spacing: 3px;
+}
+
+.card .puesto{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .info {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 0 20px;
+  color: #018980;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+
