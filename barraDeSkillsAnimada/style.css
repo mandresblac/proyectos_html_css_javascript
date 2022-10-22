@@ -44,8 +44,8 @@ p {
 
 .javascript {
   background-color: #f44336;
-  animation: filljavascript 2s forwards;
   margin-bottom: 10px;
+  animation: filljavascript 2s forwards;
 }
 
 @keyframes fillhtml {
