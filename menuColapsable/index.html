@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="javascript:void(0)" onclick="showHideSideBar()">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+    <span>Mi Biblioteca</span>
+  </header>
+
+  <section>
+    <nav id="sideBar" class="sideBar">
+      <div class="info">
+        <img src="img/leyendo.jpg" alt="" class="img-info" id="img-info">
+        <div id="texto-info">
+          <p>Mi Biblioteca</p>
+        </div>
+      </div>
+
+      <ul>
+        <li class="selected">
+          <a href="#">
+            <i class="fa-solid fa-house"></i>
+            <span class="txtLink">Inicio</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-book"></i>
+            <span class="txtLink">Catálogo</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="txtLink">Colecciones</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user-cog"></i>
+            <span class="txtLink">Servicios</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="txtLink">Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main" class="main">
+      <h1>Bienvenido</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, atque. Quas amet facilis vero ratione fuga
+        odio nesciunt modi, in nobis dicta. Quidem, quos est? Ex enim beatae quos laudantium!</p>
+    </main>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
