@@ -18,5 +18,10 @@ function promedio() {
     };
     
     //Traemos del documento HTML a Javascript el elemento con id "btn" que es el input "Calcular", luego a través de addEventListener() capturamos cuando el usuario de clic sobre ese input o boton con el evento "click" como primer parámetro del método addEventListener() y como segundo parámetro le pasamos la funcion promedio que es la que ejecuta el programa
-    document.querySelector("#btn").addEventListener("click", promedio);
-    
+    document.querySelector("#btn").addEventListener("click", ()=>{
+      //Llamamos a la función promedio
+      promedio();
+      //Traemos del documento HTML a javascript el formulario completo para después resetearlo 
+      const form = document.querySelector("#formulario");
+      form.reset(); //Utilizamos .reset() para resetear toda la información del formulario (volverlo a su estado inicial vació) después de hacer click en el boton "Calcular"
+    });
