@@ -12,7 +12,7 @@ const expresiones = {
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
-//Objeto con todos los valores en false
+//Objeto con todos los valores que representan si un campo esta valido o no
 const campos = {
   usuario: false,
   nombre: false,
@@ -57,6 +57,8 @@ const validarCampo = (expresion, input, campo) => {
 
     //Para no mostrar mensaje de explicación si el usuario llena correctamente el campo
     document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove("formulario__input-error-activo");
+
+    //Para validar campo
     campos[campo] = true;
   }
   else {
@@ -69,6 +71,8 @@ const validarCampo = (expresion, input, campo) => {
 
     //Para mostrar mensaje de explicación si el usuario llena incorrectamente el campo
     document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add("formulario__input-error-activo");
+
+    //Para validar campo
     campos[campo] = false;
   }
 };
@@ -90,6 +94,8 @@ const validarPassword2 = () => {
 
     //Para mostrar mensaje de explicación si el usuario llena incorrectamente el campo
     document.querySelector(`#grupo__password2 .formulario__input-error`).classList.add("formulario__input-error-activo");
+
+    //Para validar el campo password
     campos["password"] = false;
   }
   else {
@@ -102,6 +108,8 @@ const validarPassword2 = () => {
 
     //Para mostrar mensaje de explicación si el usuario llena incorrectamente el campo
     document.querySelector(`#grupo__password2 .formulario__input-error`).classList.remove("formulario__input-error-activo");
+
+    //Para validar el campo password
     campos["password"] = true;
   }
 };
@@ -109,7 +117,7 @@ const validarPassword2 = () => {
 
 inputs.forEach((input) => {
   input.addEventListener("keyup", validarFormulario); //Evento keyup para cuando levanten la tecla que presionaron 
-  input.addEventListener("blur", validarFormulario); //Evento blur para que cuando den click fuera de input tambien ejecute la comprobacion
+  input.addEventListener("blur", validarFormulario); //Evento blur para que cuando den click fuera de input también ejecute la comprobación
 });
 
 formulario.addEventListener("submit", (e) => {
@@ -118,7 +126,7 @@ formulario.addEventListener("submit", (e) => {
   //Para validar términos y condiciones
   const terminos = document.querySelector("#terminos");
 
-  //Condicional
+  //Condicional para comprobar que todos los campos sean correctos
   if (campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked) {
     formulario.reset()//Con .reset() reinicio todos los campos del formulario
 
@@ -127,7 +135,7 @@ formulario.addEventListener("submit", (e) => {
       document.querySelector(".formulario__mensaje-exito").classList.remove("formulario__mensaje-exito-activo");
     }, 4000);
 
-    //Para quitar todos los iconos
+    //Para quitar los iconos de check de cada input
     document.querySelectorAll(".formulario__grupo-correcto").forEach((icono) => {
       icono.classList.remove("formulario__grupo-correcto")
     });
@@ -136,9 +144,4 @@ formulario.addEventListener("submit", (e) => {
     document.querySelector("#formulario__mensaje").classList.add("formulario__mensaje-activo");
   }
 });
-
-
-
-
-
 
