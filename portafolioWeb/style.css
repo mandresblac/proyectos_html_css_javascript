@@ -226,7 +226,175 @@ body {
 
 /* -------------------- SECCIÓN SERVICIOS -------------------- */
 
+.habilidades {
+  background: linear-gradient(to right, #000c76, #007be5);
+  color: #fff;
+  padding: 60px 0;
+  position: relative;
+  top: -100px;
+}
 
+.habilidades h2 {
+  text-align: center;
+}
+
+.habilidades .contenedor-habi {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.habilidades .fila {
+  display: flex;
+  justify-content: space-around;
+}
+
+.score {
+  padding: 10px;
+  margin: auto 0;
+}
+
+.score .box {
+  width: 100%;
+}
+
+.score .box h2 {
+  display: block;
+  text-align: center;
+}
+
+.score .box .chart {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: auto;  
+  line-height: 160px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Esta clase se genera dinamicamente por la librería para gráficos */
+
+.score .box canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* -------------------- SECCIÓN TRABAJOS -------------------- */
+
+.trabajos {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.trabajos h2 {
+  text-align: center;
+}
+
+.trabajos nav {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.trabajos nav a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 20px;
+  color: #007be5;
+  font-weight: bold;
+  padding: 3px 10px;
+  border: 3px solid transparent;
+}
+
+.trabajos nav a:hover {
+  border: 3px solid #ff5b00;
+}
+
+/* Esta clase se agrega dinamicamente cuando hay seleccionando una opcion */
+.borde {
+  border: 3px solid #ff5b00;
+}
+
+.trabajos .galeria .item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.trabajos .galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 30px;
+}
+
+.trabajos .galeria .item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #8d8d8d;
+  border-radius: 10px;
+}
+
+.trabajos .galeria .item .info {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.trabajos .galeria .item .info h3 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.trabajos .galeria .item .info span {
+  color: #8d8d8d;
+  display: inline-block;
+  border: 2px solid #8d8d8d;
+  margin: 0 3px;
+  padding: 0 5px;
+}
+
+.trabajos .galeria .item .info a {
+  display: block;
+  margin: 20px;
+  text-decoration: none;
+  color: #007be5;
+  font-weight: bold;
+}
+
+.trabajos .galeria .item:hover .info {
+  opacity: 1;
+  top: 0;
+}
+
+
+/* -------------------- SECCIÓN CONTACTO -------------------- */
+
+.contacto {
+  background: linear-gradient(rgba(0, 12, 103, 1), rgba(0, 12, 103, .8)),
+              url(/img/foto-contacto.png);
+  background-size: cover;
+  color: #fff;
+  margin-top: 100px;
+  padding: 80px 20px;
+}
+
+.contacto .contenedor-contacto {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contacto h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
 
 
 
