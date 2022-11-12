@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  /* Para separar el elemento de los bordes laterales */
+  /* Para separar el elemento de los bordes laterales cuando la pantalla o viewport sea mas pequeña */
   max-width: 80%;
 
   width: 400px;

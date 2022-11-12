@@ -1,3 +1,5 @@
+/* URL del video en YouTube  https://www.youtube.com/watch?v=9N7iuyYnqpg */
+
 /* Establecemos las variables donde se almacenaran los elementos del documento HTML en Javascript */
 const fecha = document.querySelector("#fecha");
 const lista = document.querySelector("#lista");
@@ -63,7 +65,7 @@ botonEnter.addEventListener("click", () => {
 });
 
 
-//Para que se active presiona y suelta la tecla Enter utilizamos la propiedad keyup del método addEventListener()
+//Para que se active al presionar la tecla enter, presiona y suelta la tecla Enter utilizamos la propiedad keyup del método addEventListener()
 document.addEventListener("keyup", function (event) {
   //Event.key lee cualquier tecla del teclado, en este caso lee la tecla "Enter"
   if (event.key ===  "Enter") {
