@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  width: 5vw;
+  height: 100%;
+  background-color: #153462;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cuadros {
+  /* background-color: yellow; */
+  width: 100%;
+  height: 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+}
+
+.cuadros .cuadro-interno {
+  width: 50%;
+  height: 50%;
+  /* border-radius: 50%; */
+  background-color: #7DE5ED;
+}
+
+.cuadro2 {
+  align-self: start;
+}
+
+.cuadro3 {
+  align-self: start;
+}
+
+.cuadro6 {
+  align-self: start;
+}
+
+.cuadro7 {
+  align-self: start;
+}
+
