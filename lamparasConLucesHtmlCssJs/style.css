@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 body {
@@ -64,6 +63,7 @@ body {
   text-align: center;
   color: rgb(35, 35, 35);
   letter-spacing: 3px;
+  font-family: sans-serif;
 }
 
 .t0 {
