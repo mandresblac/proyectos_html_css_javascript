@@ -69,6 +69,10 @@ main .canvas {
   max-width: 100%;
   margin: 0.8rem;
   border-radius: 5px;
+  width: 600px; /* Ancho del canvas */
+  height: 400px; /* Alto del canvas */
+  border: 1px solid rgba(45, 73, 237, 0.5);
+  /* background-color: lightgrey; */ /* Color de fondo del canvas */
 }
 
 main .frase{
@@ -118,6 +122,12 @@ main .btn:hover{
 main .vidas {
   margin: 1.5rem;
   font-size: 1.5rem;
+}
+
+main .mensaje {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 /* MEDIA QUERIES - RESPONSIVE */

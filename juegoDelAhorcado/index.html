@@ -17,29 +17,26 @@
 <body>
   <main class="main">
     <h1 class="titulo">juego del ahorcado</h1>
-    <h2 class="subtitulo">Selecciona un tema:</h2>
+    <h2 class="subtitulo">Primero debes seleccionar un tema:</h2>
 
     <div class="temas" id="temas">
-      <input class="btn-temas" type="button" id="animales" value="animales">
-      <input class="btn-temas" type="button" id="ciudades" value="ciudades">
-      <input class="btn-temas" type="button" id="frutas" value="frutas">
-      <input class="btn-temas" type="button" id="colores" value="colores">
+      <input class="btn-temas" type="button" id="animales" value="Animales">
+      <input class="btn-temas" type="button" id="paises" value="Paises">
+      <input class="btn-temas" type="button" id="frutas" value="Frutas">
+      <input class="btn-temas" type="button" id="colores" value="Colores">
     </div>
 
-    <canvas class="canvas" id="canvas" width="600" height="400"></canvas>
+    <canvas class="canvas" id="canvas"></canvas>
 
-    <div class="frase" id="frase">
-      Nuestra frase
-    </div>
+    <div class="frase" id="frase"></div>
 
     <div class="entrada">
       <input class="letra" id="letra" type="text" placeholder="Escribe letra">
       <input class="btn" type="button" id="btn" value="comprobar">
     </div>
 
-    <div class="vidas" id="vida">
-      El número de vidas que quedan son: 4
-    </div>
+    <div class="vidas" id="vida"></div>
+    <div class="mensaje" id="mensaje"></div>
   </main>
 
   <script src="app.js"></script>
