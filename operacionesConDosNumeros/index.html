@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="input">
+          <h1 class="title">Operaciones con dos números</h1>
+          
+          <div class="numero">
+            <label class="label" for="num1">Ingrese primer número:</label>
+            <input type="text" name="nota1" id="num1" class="caja">
+          </div>
+          
+          <div class="numero">
+            <label class="label" for="num2">Ingrese segundo número:</label>
+            <input type="text" name="nota1" id="num2" class="caja caja2">
+          </div>
+         </div>
+         
+        <div class="output">
+          <h2 class="subtitle">Selecciona una operacion aritmetica:</h2>
+          <div class="operacion suma">
+            <input type="button" id="btn-sumar" class="btn" value="Sumar" />
+            <p id="result-suma" class="result-suma"></p>
+          </div>
+          <div class="operacion resta">
+            <input type="button" id="btn-restar" class="btn" value="Restar" />
+            <p id="result-resta" class="result-resta"></p>
+          </div>
+          <div class=" operacion multiplicar">
+            <input type="button" id="btn-multiplicar" class="btn" value="Multiplicar" />
+            <p id="result-multiplicar" class="result-multiplicar"></p>
+          </div>
+          <div class="operacion dividir">
+            <input type="button" id="btn-dividir" class="btn" value="Dividir" />
+            <p id="result-dividir" class="result-dividir"></p>
+          </div>
+        </div>
+      </main>
+<script src="app.js"></script>
+</body>
+</html>
