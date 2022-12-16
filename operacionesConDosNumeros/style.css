@@ -44,7 +44,8 @@
     text-align: center;
     font-size: 1.4rem;
     border-radius: 5px;
-    border: 1px solid gray;
+    outline: none; /* Elimina borde cuando se hace click sobre la caja */
+    border: 1px solid rgba(45, 73, 237, 0.5);
 }
 
 .input .numero .caja2 {
@@ -53,7 +54,7 @@
 
 .output {
     width: 50%;
-    padding: 40px 0;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0,0,0, 0.1);
@@ -70,6 +71,43 @@
 }
 
 .output .operacion {
+    margin: 8px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.output .btn {
+    font-size: 1.2rem;
+    min-width: 5rem;
+    padding: 2px 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgba(45, 73, 237, 0.5);
+    background-color: rgba(192, 192, 192, 0.3);
+}
+
+.output .btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.output .result {
+    font-size: 1.4rem;
+    padding: 2px 20px;
+}
+
+#result-suma,
+#result-resta,
+#result-multiplicar,
+#result-dividir {
+    min-width: 5rem;
+    /* background-color: red; */
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0px 20px;
 }
