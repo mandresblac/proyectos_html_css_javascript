@@ -1,0 +1,108 @@
+/* Declaramos variables */
+:root {
+  --fondo-body:#E5E5E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--fondo-body);
+}
+
+.container {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  /* background-color: blue; */
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 40px 0 15px;
+}
+
+.formulario{
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.formulario .label-input {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.formulario .label {
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 6px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.formulario .input {
+  width: 100%;
+  bottom: #fff;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 35px;
+  font-size: 1.2rem;
+  padding-left: 10px;
+  transition: .3s ease all;
+}
+
+.formulario .input::placeholder {
+  text-align: left;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.formulario .btn {
+  height: 35px;
+  width: 31%;
+  margin: 30px auto 6px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: .1s ease all;
+}
+
+.formulario .btn:hover {
+  /* background-color: white;
+  color: #000; */
+  box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+}
+
+.tabla {
+  margin: 35px auto;
+  border: black 1px solid;
+}
+
+.tabla thead, th {
+  background-color: rgb(173, 216, 230);
+  border: black 1px solid;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+

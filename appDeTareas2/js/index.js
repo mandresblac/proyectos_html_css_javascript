@@ -14,7 +14,8 @@ const crearTarea = () => {
 };
 
 document.querySelector("#btn").addEventListener("click", (event) => {
-  //Para prevenir la acción por defecto del formulario que sera procesarse
+  //console.log(event);
+  //Para prevenir la acción por defecto del formulario que sera procesarse, para que yo pueda controlar el evento
   event.preventDefault();
 
   //Para controlar si el usuario hace click sobre el botón sin haber insertado ningún valor en el input con id "item"
