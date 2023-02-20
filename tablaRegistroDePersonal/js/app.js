@@ -5,23 +5,26 @@ const tabla = document.querySelector("#tabla tbody");
 let id = 1;
 
 //Desestructuramos el elemento formulario
-const { nombre1, nombre2, apellido1, apellido2, edad, genero } = formulario;
+const { nombres, apellidos, telefono, direccion, edad, genero } = formulario;
 
 //Evento
 btnEnviar.addEventListener("click", (e) => {
   e.preventDefault(); // Prevenimos la acción por default
   validar();
-  formulario.reset(); //resetea formulario
+
+  setTimeout(() => {
+    formulario.reset(); //resetea formulario
+  }, 3000);
 });
 
 function generarTabla() {
   const fila = document.createElement("tr");
   fila.innerHTML = `
   <td>${id++}</td>
-  <td>${nombre1.value}</td>
-  <td>${nombre2.value}</td>
-  <td>${apellido1.value}</td>
-  <td>${apellido2.value}</td>
+  <td>${nombres.value}</td>
+  <td>${apellidos.value}</td>
+  <td>${telefono.value}</td>
+  <td>${direccion.value}</td>
   <td>${edad.value}</td>
   <td>${genero.value}</td>
   <td>
@@ -34,20 +37,38 @@ function generarTabla() {
 
 function validar() {
   if (
-    nombre1.value.trim() === "" ||
-    nombre2.value.trim() === "" ||
-    apellido1.value.trim() === "" ||
-    apellido2.value.trim() === "" ||
+    nombres.value.trim() === "" ||
+    apellidos.value.trim() === "" ||
+    telefono.value.trim() === "" ||
+    direccion.value.trim() === "" ||
     edad.value.trim() === "" ||
     genero.value.trim() === ""
   ) {
-    alert("Todos los campos son obligatorios");
-    return false;
+    mostrarAlerta();
   } else {
     generarTabla();
   }
 }
 
-function eliminarFila() {
-  fila.innerHTML = "";
+//Muestra una alerta si el usuario comete un error
+function mostrarAlerta() {
+  const error = document.createElement("p");
+  error.textContent = "Todos los campos son obligatorios";
+
+  //Agregamos clases el elemento error
+  error.style.background = "red";
+  error.style.color = "white";
+  error.style.textAlign = "center";
+  error.style.fontSize = "1.3rem";
+  error.style.width = "100%";
+  error.style.height = "35px";
+  error.style.lineHeight = "35px";
+
+  //Agregamos el elemento error al formulario
+  formulario.appendChild(error);
+
+  // Removemos la alerta después de 2 segundos
+  setTimeout(() => {
+    error.remove();
+  }, 2000);
 }

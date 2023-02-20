@@ -1,6 +1,6 @@
 /* Declaramos variables */
 :root {
-  --fondo-body:#E5E5E5;
+  --fondo-body: #CBD5E1;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
 }
 
 .formulario{
-  /* background-color: green; */
+  background-color: #E5E5E5;
   display: flex;
   flex-direction: column;
   padding: 10px 30px;
@@ -88,9 +88,9 @@ body {
 }
 
 .formulario .btn:hover {
-  /* background-color: white;
-  color: #000; */
-  box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+  background-color: #DB2777;
+  color: white;
+  box-shadow: 3px 0 10px rgba(163, 163, 163, 1);
 }
 
 .tabla {
