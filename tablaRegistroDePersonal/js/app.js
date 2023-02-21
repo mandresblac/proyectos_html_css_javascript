@@ -54,6 +54,7 @@ function validar() {
 function mostrarAlerta() {
   const error = document.createElement("p");
   error.textContent = "Todos los campos son obligatorios";
+  error.id = "alerta";
 
   //Agregamos clases el elemento error
   error.style.background = "red";
@@ -63,6 +64,7 @@ function mostrarAlerta() {
   error.style.width = "100%";
   error.style.height = "35px";
   error.style.lineHeight = "35px";
+  error.style.borderRadius = "3px";
 
   //Agregamos el elemento error al formulario
   formulario.appendChild(error);
