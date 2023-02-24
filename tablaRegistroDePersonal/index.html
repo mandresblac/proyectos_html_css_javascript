@@ -51,9 +51,9 @@
         </div>
 
         <div>
-          <label class="label genero" for="genero">Selecciona tu genero</label>
+          <label class="label genero" for="genero">Seleccione genero</label>
           <select class="input genero" name="genero" id="genero" required>
-            <option></option>
+            <option value="">Seleccione</option>
             <option value="femenino">Femenino</option>
             <option value="masculino">Masculino</option>
             <option value="otro">Otro</option>
@@ -62,7 +62,10 @@
         </div>
       </div>
 
-      <input class="btn" id="btn-enviar" type="submit" value="Enviar">
+      <div class="botones">
+        <input class="btn" id="btn-enviar" type="submit" value="Enviar">
+        <input class="btn" id="btn-reset" type="reset" value="Reset">
+      </div>
 
     </form>
   </div>
@@ -87,7 +90,8 @@
     </table>
   </div>
 
-  <script src="./js/app.js"></script>
+  <!-- <script src="./js/app1.js"></script> -->
+  <script src="./js/app2.js"></script>
 </body>
 
 </html>
