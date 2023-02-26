@@ -4,14 +4,24 @@ const tabla = document.querySelector("#tabla tbody");
 const btnEnviar = document.querySelector("#btn-enviar");
 const btnReset = document.querySelector("#btn-reset");
 let id = 1;
+let personas = [];
 
 // ---------------------- EVENT LISTENERS -----------------------------
 
 function eventListener() {
+  //Cuando el usuario agrega una nueva persona
   btnEnviar.addEventListener("click", agregarRegistro);
 
   //Resetea Formulario
   btnReset.addEventListener("click", resetFormulario);
+
+  //Cuando el documento esta listo
+  /* document.addEventListener("DOMContentLoaded", () => {
+    //Traemos las personas que están en local storage con formato .JSON y los convertimos a un objeto javascript con JSON.parse() si no hay personas se asigna como una array vació "[]"
+    personas = JSON.parse(localStorage.getItem("personas")) || [];
+
+    //crearFila();
+  }); */
 }
 
 // Llamamos la función que ejecuta todos los event listeners
@@ -38,6 +48,20 @@ function agregarRegistro(e) {
     mostrarError("Todos los campos son obligatorios");
     return; //return evita que se ejecuten mas lineas de código, es decir, sale de función agregarRegistro()
   }
+
+  //Generamos objeto que almacenara los datos de las personas
+  const personaObj = {
+    id: Date.now(),
+    nombres: nombres.value,
+    apellidos: apellidos.value,
+    telefono: telefono.value,
+    direccion: direccion.value,
+    edad: edad.value,
+    genero: genero.value,
+  };
+
+  //Agregamos contenido al arreglo personas
+  personas = [...personas, personaObj]; //personaObj es lo que el usuario esta escribiendo
 
   // LLamamos a la función que crea la fila en el documento HTML
   crearFila();
@@ -68,12 +92,17 @@ function crearFila() {
   //Creamos botón para eliminar una fila
   const btnEliminar = document.createElement("a");
   //Agregamos texto
-  btnEliminar.textContent = "❌";
+  btnEliminar.textContent = "X";
   btnEliminar.classList.add("btn-eliminar"); //Agregamos estilos CSS del archivo custom.css, clase .error
   //Añadimos función para eliminar toda la fila
   btnEliminar.onclick = () => {
-    borrarFila();
+    borrarFila(fila);
   };
+
+  //Creamos una celda
+  const celda = document.createElement("td");
+  //Agregamos botón de eliminar a la celda
+  celda.appendChild(btnEliminar);
 
   // Creamos fila en HTML
   const fila = document.createElement("tr");
@@ -87,17 +116,31 @@ function crearFila() {
   <td>${genero.value}</td>
   `;
 
-  //Insertamos el botón eliminar a la fila
-  fila.appendChild(btnEliminar);
+  //Insertamos la celda con el botón eliminar a la fila
+  fila.appendChild(celda);
   //Insertamos la fila en la tabla del documento HTML
-  return document.querySelector("#tabla tbody").appendChild(fila);
+  document.querySelector("#tabla tbody").appendChild(fila);
+
+  //Llamada a la función  que agrega los tweets al local storage del navegador
+  //sincronizarStorage();
 }
+
+//Agrega las personas actuales al local storage del navegador
+/* function sincronizarStorage() {
+  localStorage.setItem("personas", JSON.stringify(personas));
+} */
 
 //Resetea Formulario
 function resetFormulario(e) {
   e.preventDefault();
   formulario.reset();
+
+  //Establecemos el foco en el elemento textArea con id "tweet"
+  document.querySelector("#nombres").focus();
 }
 
 //Función que elimina la fila
-function borrarFila() {}
+function borrarFila(fila) {
+  fila.textContent = "";
+  fila.classList.add("ocultar"); //Oculta la fila
+}
