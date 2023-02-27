@@ -2,7 +2,7 @@ const minusculas = "abcdefghijklmnopqrstuvwxyz";
 const mayusculas = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z";
 const numeros = "1,2,3,4,5,6,7,8,9,0";
 
-//Convertimos el string minusculas a un array von el spread operatos [...minusculas]
+//Convertimos el string minúsculas a un array con el spread operator [...minúsculas]
 const arrayMinusculas = [...minusculas];
 
 //Otra forma de convertir el string minúsculas a un array es con el método .split() de los string, pero el string debe llevar comas "," para pasárselo como parámetro separador al método .split(",")
