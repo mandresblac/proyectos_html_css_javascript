@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 30px;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 18px;
+    border: 1px solid black;;
+    outline: none;
+    border-radius: 50%;
+    color: black;
+}
+
+.btn:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
