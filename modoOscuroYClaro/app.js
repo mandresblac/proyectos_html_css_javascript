@@ -2,6 +2,11 @@ const boton = document.querySelector("#btn");
 
 boton.addEventListener("click", darkMode);
 
+//mouseover y mouseout
+/* boton.addEventListener("mouseover", (event) => {
+  event.target.style.color = "grey";
+}); */
+
 function darkMode() {
   let body = document.querySelector("body");
 
