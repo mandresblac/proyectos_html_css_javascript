@@ -1,27 +1,17 @@
-const boton = document.querySelector('#btn');
+const boton = document.querySelector("#btn");
 
-boton.addEventListener('click', darkMode);
-
-/* function changeMode() {
-    const body = document.querySelector('body');
-
-    if(body.classList = ""){
-        body.classList.add("dark-mode")
-    } else {
-        body.classList.remove("light-mode");
-        body.classList.add("dark-mode");
-    }
-} */
+boton.addEventListener("click", darkMode);
 
 function darkMode() {
-    document.querySelector('body').classList.add('dark-mode');
-    boton.textContent = 'Light';
-    boton.onclick = () => lightMode();
-};
+  let body = document.querySelector("body");
 
-function lightMode() {
-    document.querySelector('body').classList.add('light-mode');
-    boton.textContent = 'Dark';
-    darkMode();
-    document.querySelector('body').classList.remove('dark-mode');
-};
+  if (body.classList.toggle("dark-mode")) {
+    document.querySelector(".fa-sun").style = "display:block";
+    document.querySelector(".fa-moon").style = "display:none";
+    document.querySelector("#btn").style.background = "white";
+  } else {
+    document.querySelector(".fa-sun").style = "display:none";
+    document.querySelector(".fa-moon").style = "display:block";
+    document.querySelector("#btn").style.background = "black";
+  }
+}
