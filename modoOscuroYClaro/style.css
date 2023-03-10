@@ -22,11 +22,6 @@ body {
     border-radius: 50%;
 }
 
-/* .btn:hover {
-    background-color: white;
-    color: black;
-} */
-
 .btn .fa-moon {
     font-size: 1.6rem;
     color: white;
@@ -37,19 +32,7 @@ body {
     font-size: 1.6rem;
 }
 
-.hide {
-    display: none;
-}
-
-.display {
-    display: block;
-}
-
 .dark-mode {
     background-color: black;
     color: white;
-}
-
-.btn-light {
-    background-color: white;
 }
