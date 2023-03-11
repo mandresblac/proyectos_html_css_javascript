@@ -1,11 +1,19 @@
+// ------------------ VARIABLES Y SELECTORES ------------------ //
 const boton = document.querySelector("#btn");
 
-boton.addEventListener("click", darkMode);
+// ------------------------- EVENTOS ------------------------- //
+function eventListeners() {
+  boton.addEventListener("click", darkMode);
+  //mouseover para que al pasar el puntero del ratón sobre el botón este cambie de color
+  boton.addEventListener("mouseover", () => ponerFondo("grey"));
+  //mouseout para que al quitar el puntero del ratón este cambie a otro color distinto al de mouseover
+  boton.addEventListener("mouseout", () => quitarFondo("black"));
+}
 
-//mouseover y mouseout
-/* boton.addEventListener("mouseover", (event) => {
-  event.target.style.color = "grey";
-}); */
+//Llamamos la función eventListeners()
+eventListeners();
+
+// ------------------------ FUNCIONES ------------------------ //
 
 function darkMode() {
   let body = document.querySelector("body");
@@ -13,10 +21,30 @@ function darkMode() {
   if (body.classList.toggle("dark-mode")) {
     document.querySelector(".fa-sun").style = "display:block";
     document.querySelector(".fa-moon").style = "display:none";
-    document.querySelector("#btn").style.background = "white";
+    boton.style.background = "white";
+
+    //onmouseover para que al pasar puntero del ratón sobre el boton cambie a color gris claro
+    boton.onmouseover = () => ponerFondo("lightgrey");
+
+    //onmouseout para que al quitar el puntero del ratón cambie a color blanco
+    boton.onmouseout = () => quitarFondo("white");
   } else {
     document.querySelector(".fa-sun").style = "display:none";
     document.querySelector(".fa-moon").style = "display:block";
-    document.querySelector("#btn").style.background = "black";
+    boton.style.background = "black";
+
+    //onmouseover para que al pasar puntero del ratón sobre el boton cambie a color gris claro
+    boton.onmouseover = () => ponerFondo("grey");
+
+    //onmouseout para que al quitar el puntero del ratón cambie a color negro
+    boton.onmouseout = () => quitarFondo("black");
   }
+}
+
+function ponerFondo(color) {
+  boton.style.background = `${color}`;
+}
+
+function quitarFondo(color) {
+  boton.style.background = `${color}`;
 }
