@@ -21,9 +21,8 @@ function darkMode() {
   if (body.classList.toggle("dark-mode")) {
     document.querySelector(".fa-sun").style = "display:block";
     document.querySelector(".fa-moon").style = "display:none";
-    boton.style.background = "white";
 
-    //onmouseover para que al pasar puntero del ratón sobre el boton cambie a color gris claro
+    //onmouseover para que al pasar puntero del ratón sobre el botón cambie a color gris claro
     boton.onmouseover = () => ponerFondo("lightgrey");
 
     //onmouseout para que al quitar el puntero del ratón cambie a color blanco
@@ -31,7 +30,6 @@ function darkMode() {
   } else {
     document.querySelector(".fa-sun").style = "display:none";
     document.querySelector(".fa-moon").style = "display:block";
-    boton.style.background = "black";
 
     //onmouseover para que al pasar puntero del ratón sobre el boton cambie a color gris claro
     boton.onmouseover = () => ponerFondo("grey");
@@ -43,6 +41,7 @@ function darkMode() {
 
 function ponerFondo(color) {
   boton.style.background = `${color}`;
+  boton.style.border = "none";
 }
 
 function quitarFondo(color) {
