@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: sans-serif;
 }
 
 body {
@@ -17,62 +17,37 @@ body {
 button {
   order: 2; /* Coloca el botón en segunda posición */
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 25px;
   width: 3rem;
   height: 3rem;
+  padding: 30px;
   border: 0;
   background-color: transparent;
-  gap: .6rem; /* separamos los elementos */
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-/* Estilos para elementos DIV que están dentro del button  */
-button > div {
-  background-color: black;
-  height: 3px;
-  width: 80%; /* ancho completo del 100% */
-  border-radius: 5px;
-  transition: all .5s;
-  transform-origin: left; /* transformaciones empiezan por la izquierda*/
+.fa-solid {
+  font-size: 1.9rem;
 }
 
-/* Animaciones del BUTTON */
-
-button:hover {
-  background-color: lightgray;
-  border-radius: 50%;
-}
-
-/* DIV superior */
-button:hover div:first-child {
-  transform: rotate(45deg);/* Rotamos 45 grados (45deg)*/
-  width: 76%;/* Alargamos el div */
-  margin-left: .66rem;
-}
-
-/* DIV intermedio */
-button:hover div:nth-child(2) {
-  opacity: 0; /* Ocultamos el div de la mitad */
-}
-
-/* DIV inferior*/
-button:hover div:last-child {
-  transform: rotate(-45deg); /* Rotamos 45 grados en sentido inverso (-45deg)*/
-  width: 76%; /* Alargamos el div */
-  margin-left: .66rem;
+.text-menu {
+  order: 3; /* Coloca el texto "menú" en tercera posición */
+  margin-top: 37px;
+  margin-left: 3px;
+  font-size: 1.4rem;
 }
 
 /* ------------------- ESTILOS PARA EL MENU --------------------- */
 .menu {
   order: 1; /* Coloca el menu en primera posición */
   background-color: black;
-  width: 20vw;
+  width: 14vw;
   height: 100vh;
-  /* display: none; */
+  display: none;
 }
 
 .menu nav {
@@ -91,12 +66,18 @@ button:hover div:last-child {
   margin: 20px 0;
   margin-left: 50px;
   list-style: none; /* Eliminar viñetas o puntitos laterales del elemento li*/
+  display: flex;
+  align-items: center;
+}
+
+.menu nav i {
+  font-size: 1.4rem;
+  color: white;
+  margin-right: 20px;
 }
 
 .menu nav a {
   text-decoration: none; /* Elimina el subrayado a los enlaces */
   color: white;
-  font-size: 1.9rem;
-  font-weight: bold;
-  
+  font-size: 1.5rem;  
 }
