@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #43cea2;/* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);/* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #185a9d, #43cea2);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  /* background-color: red; */
+  min-width: 100vw;
+  height: 100vh;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.formulario {
+  /* background-color: orange; */
+  min-width: 100%;
+  margin-top: 50px;
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario div {
+  /* background-color: blue; */
+  min-width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.formulario div label {
+  /* background-color: magenta; */
+  width: 30%;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-size: 1.9rem;
+  color: white;
+  text-align: left;
+}
+
+.formulario div input {
+  width: 30%;
+  height: 2.7rem;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+
+/* Para qua aparezca un borde al posicionarse sobe el input utilizamos :focus */
+.formulario div input:focus {
+  outline: none; /* Desactiva el borde que trae por defecto del input */
+  border: 3px solid #0075ff;
+}
+
+
+.formulario .btn {
+  background-color: #ecc94b;
+  margin-top: 44px;
+  width: 30%;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.formulario .btn:hover {
+  background-color: #f7da72;
+}
