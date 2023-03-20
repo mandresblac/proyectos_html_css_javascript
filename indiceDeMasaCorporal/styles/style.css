@@ -88,10 +88,50 @@ body {
   line-height: 2.8rem;
   border: none;
   border-radius: 3px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .formulario .btn:hover {
   background-color: #f7da72;
+}
+
+.resultado {
+  min-width: 100%;
+
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------- CLASES AGREGADAS A TRAVES DE JAVASCRIPT */
+.alerta {
+  background-color: #ed9e9b;
+  margin: 10px;
+  min-width: 30%;
+  padding: 0px 20px 0px;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #650c09;
+  border-radius: 3px;
+  border: 1px solid #dd6f6b;
+}
+
+.mostrar-imc {
+  /* background-color: green; */
+  min-width: 30%;
+  /* height: 4rem; */
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
