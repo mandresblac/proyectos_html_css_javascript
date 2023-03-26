@@ -13,7 +13,7 @@ function validaciones(e) {
   e.preventDefault();
 
   limpiarHtml();
-  mostrarSpinner();
+  /* mostrarSpinner(); */
 
   if (estatura.value === "" || peso.value == "") {
     //Validamos que el usuario llene ambos campos
@@ -101,14 +101,13 @@ function mostrarImc(valor, mensaje) {
   resultado.appendChild(valorImc);
   resultado.appendChild(mensajeImc);
 
-  //Después de 5 segundos quitamos el mensaje del HTML , reseteamos todo el formulario ponemos y el foco en el input estatura
+  //Después de 4 segundos quitamos el mensaje del HTML , reseteamos todo el formulario ponemos y el foco en el input estatura
   setTimeout(() => {
     limpiarHtml();
     formulario.reset(); //Reseteamos formulario
     estatura.focus();
-  }, 5000);
+  }, 4000);
 }
-
 
 function mostrarSpinner() {
   /* limpiarHTML(); */
