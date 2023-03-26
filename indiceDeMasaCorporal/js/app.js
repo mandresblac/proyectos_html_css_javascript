@@ -13,6 +13,7 @@ function validaciones(e) {
   e.preventDefault();
 
   limpiarHtml();
+  mostrarSpinner();
 
   if (estatura.value === "" || peso.value == "") {
     //Validamos que el usuario llene ambos campos
@@ -106,4 +107,30 @@ function mostrarImc(valor, mensaje) {
     formulario.reset(); //Reseteamos formulario
     estatura.focus();
   }, 5000);
+}
+
+
+function mostrarSpinner() {
+  /* limpiarHTML(); */
+
+  const spinner = document.createElement('div');
+  spinner.classList.add('sk-chase');
+
+  spinner.innerHTML = `
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  `;
+
+  resultado.appendChild(spinner);
+
+  //Quitamos el spinner despues de 2 segundos
+  setTimeout(() => {
+    spinner.remove();
+  }, 2000);
 }
