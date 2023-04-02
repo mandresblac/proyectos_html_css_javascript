@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Seccion agregar tarea -->
+        <div class="agregar-tarea">
+            <h1 class="title">APP DE TAREAS</h1>
+
+            <form action="" class="formulario">
+                <label for="input-tarea">Tarea</label>
+                <div class="inputs">
+                    <input id="input-tarea" type="text" placeholder="Agrega una tarea">
+                    <input type="submit" value="Agregar tarea">
+                </div>
+
+            </form>
+        </div>
+
+
+        <!-- Seccion tareas agregadas -->
+        <div class="tareas-agregadas">
+            <h2>Tareas pendientes</h2>
+            <ul id="resultado">
+                <li>Tarea</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
