@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -15,11 +15,11 @@
         <div class="agregar-tarea">
             <h1 class="title">APP DE TAREAS</h1>
 
-            <form action="" class="formulario">
+            <form action="" class="formulario" id="formulario">
                 <label for="input-tarea">Tarea</label>
                 <div class="inputs">
                     <input id="input-tarea" type="text" placeholder="Agrega una tarea">
-                    <input type="submit" value="Agregar tarea">
+                    <input id="btn" type="submit" value="Agregar tarea">
                 </div>
 
             </form>
@@ -29,12 +29,11 @@
         <!-- Seccion tareas agregadas -->
         <div class="tareas-agregadas">
             <h2>Tareas pendientes</h2>
-            <ul id="resultado">
-                <li>Tarea</li>
-            </ul>
+            <ul id="resultado" class="resultado"></ul>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script1.js"></script>
+    <!-- <script src="js/script2.js"></script> -->
 </body>
 </html>
