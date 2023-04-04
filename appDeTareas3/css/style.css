@@ -147,6 +147,9 @@ body {
     background-color: rgb(208, 22, 22);
 }
 
-
+.ocultar {
+    display: none;
+    border: none;
+}
 
 
