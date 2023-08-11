@@ -1,23 +1,19 @@
 let add = document.querySelector("#add");
 let subtract = document.querySelector("#subtract");
 
-add.addEventListener("click", () => {
+add.addEventListener("click", () => addAndSubtract("+"));
+subtract.addEventListener("click", () => addAndSubtract("-"));
+
+function addAndSubtract(operador) {
   let output = document.querySelector("#output");
-  let result = addAndSubtract(Number(output.innerText), 1, "+");
 
-  if (result > 10) result = 0;
-  output.innerText = result;
-});
+  if (operador === "+") {
+    let result = Number(output.innerText) + 1;
+    if (result > 10) return (result = 0);
+    return (output.innerText = result);
+  }
 
-subtract.addEventListener("click", () => {
-  let output = document.querySelector("#output");
-  let result = addAndSubtract(Number(output.innerText), 1, "-");
-
+  let result = Number(output.innerText) - 1;
   if (result < 0) result = 0;
-  output.innerText = result;
-});
-
-function addAndSubtract(a, b, operador) {
-  if (operador === "+") return a + b;
-  return a - b;
+  return (output.innerText = result);
 }

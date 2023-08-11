@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
+  background-color: rgb(10, 10, 35);
 }
 
 .container {
@@ -29,6 +29,12 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
+}
+
+h1 {
+  color: #fff;
+  user-select: none; /* Para que el usuario no pueda seleccioanr texto */
+  text-transform: capitalize;
 }
 
 .container-2 {
@@ -56,8 +62,9 @@ button {
   user-select: none; /* Para que el usuario no pueda sombrear el texto */
   background-color: transparent;
   border: none;
+  color: #fff;
 }
 
 button:hover {
-  color: #2b2a2a;
+  color: #a2a0a0;
 }
