@@ -20,14 +20,14 @@ header .title {
 .container-1 {
   /* background-color: purple; */
   width: 100vw;
-  height: 20vh;
+  /* height: 20vh; */
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container-1 .text{
+.container-1 .text {
   font-size: 25px;
   margin: 20px 0;
 }
@@ -54,11 +54,11 @@ header .title {
   background-color: green;
 }
 
-.container-1 .yellow{
+.container-1 .yellow {
   background-color: yellow;
 }
 
-.container-1 .orange{
+.container-1 .orange {
   background-color: orange;
 }
 
@@ -69,18 +69,19 @@ header .title {
 .container-2 {
   /* background-color: lightcoral; */
   width: 100vw;
-  height: 70vh;
+
+  margin: 50px 0 20px;
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container-2 .square {
   /* background-color: white; */
-  width: 500px;
-  height: 500px;
+  width: 14rem;
+  height: 14rem;
   border: 3px solid black;
-  margin-top: 50px;
 
   display: flex;
   justify-content: center;
