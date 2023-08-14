@@ -6,6 +6,7 @@
   --blanco: rgb(218, 218, 218);
   --rojo: rgb(198, 31, 42);
   --separaLetras: 2px;
+  --gris: rgb(76, 76, 79);
 }
 /* ---------------- CONFIGURACIONES GENERALES ---------------- */
 * {
@@ -24,6 +25,16 @@ body {
 a {
   text-decoration: none;
   color: var(--blanco);
+}
+
+h2 {
+  display: inline;
+  max-width: 50rem;
+  white-space: normal;
+  color: var(--blanco);
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 400;
 }
 
 /* ---------------- SECCION DE ENCABEZADO ---------------- */
@@ -114,3 +125,58 @@ a {
 }
 
 /* ---------------- SECCION DE INICIO ---------------- */
+
+.inicio {
+  margin: 6rem 6.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.inicio p {
+  margin: 2rem 0;
+  color: var(--gris);
+  font-size: 1.3rem;
+  width: 45%;
+}
+
+.inicio button {
+  color: var(--blanco);
+  background-color: var(--rojo);
+  border: none;
+  font-size: 1.3rem;
+  width: 20%;
+  padding: 15px;
+}
+
+/* ---------------- MEDIA QUERIES SECCION INICIO ---------------- */
+
+@media (max-width: 789px) {
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inicio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .inicio p {
+    width: 90vw;
+    text-align: justify;
+  }
+
+  .inicio button {
+    width: 20vw;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .inicio button {
+    width: 40vw;
+    font-size: 1rem;
+  }
+}
