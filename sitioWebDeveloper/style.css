@@ -1,0 +1,116 @@
+/* ---------------- GOOGLE FONTS ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* ---------------- VARIABLES O CUSTOM PROPERTIES ---------------- */
+:root {
+  --blanco: rgb(218, 218, 218);
+  --rojo: rgb(198, 31, 42);
+  --separaLetras: 2px;
+}
+/* ---------------- CONFIGURACIONES GENERALES ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(17, 18, 29);
+  line-height: 1.5; /* Interlineado  */
+}
+
+/* ---------------- GLOBALES ---------------- */
+a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+/* ---------------- SECCION DE ENCABEZADO ---------------- */
+
+.header {
+  width: 100%;
+  min-height: 6.7rem;
+  background-color: rgb(11, 12, 19);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h1 {
+  color: var(--blanco);
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: var(--separaLetras);
+}
+
+.header h1 span {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--rojo);
+}
+
+.nav {
+  display: flex;
+}
+
+.nav div {
+  padding: 5px 0;
+  font-size: 1.3rem;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.nav div i {
+  color: var(--rojo);
+  margin-right: 3px;
+  font-size: 1.5rem;
+}
+
+.nav div:hover {
+  border-bottom: 1px solid var(--blanco);
+}
+
+/* ---------------- MEDIA QUERIES DEL HEADER ---------------- */
+
+@media (max-width: 980px) {
+  .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header h1 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 789px) {
+  .header {
+    padding: 40px;
+  }
+
+  .header h1 {
+    text-align: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .nav div {
+    padding-top: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .nav div i {
+    margin-right: 12px;
+  }
+}
+
+/* ---------------- SECCION DE INICIO ---------------- */
