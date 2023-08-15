@@ -10,6 +10,7 @@
   --rojo: rgb(198, 31, 42);
   --separaLetras: 2px;
   --gris: rgb(76, 76, 79);
+  --hoverBoton: rgb(239, 60, 72);
 }
 /* ---------------- CONFIGURACIONES GENERALES ---------------- */
 * {
@@ -166,6 +167,11 @@ h3 {
   font-size: 1.3rem;
   width: 20%;
   padding: 15px;
+  cursor: pointer;
+}
+
+.inicio button:hover {
+  background-color: var(--hoverBoton);
 }
 
 /* ---------------- MEDIA QUERIES SECCION INICIO ---------------- */
@@ -318,6 +324,7 @@ form .mensaje {
   outline: none; /* Elimina el contorno de enfoque del input */
   padding: 15px; /* Añade algún espacio interno para mejorar el aspecto */
   resize: none; /* Restringe el redimensionamiento del elemento textarea */
+  font-family: "Lato";
 }
 
 form .button {
@@ -328,6 +335,11 @@ form .button {
   font-size: 1.3rem;
   width: 9rem;
   padding: 10px 40px;
+  cursor: pointer;
+}
+
+form .button:hover {
+  background-color: var(--hoverBoton);
 }
 
 /* ---------------- MEDIA QUERIES SECCION CONTACTO ---------------- */
