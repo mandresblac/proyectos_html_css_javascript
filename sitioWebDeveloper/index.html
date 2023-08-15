@@ -48,7 +48,7 @@
     </header>
 
     <!-- Seccion inicio -->
-    <section class="inicio">
+    <section class="container inicio">
       <h2>Hello, I'm <br />a Front end Developer</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
@@ -58,99 +58,95 @@
     </section>
 
     <!-- Seccion servicios y habilidades -->
-    <section>
-      <h3>Services</h3>
+    <section class="container servicios">
       <h2>Skill-Set</h2>
 
-      <article>
-        <span><i class="fa-brands fa-github"></i></span>
-        <h3>Git version control</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum incidunt
-          aperiam vel repellat in, voluptatum optio aspernatur quod labore
-          mollitia ipsum pariatur ea dicta esse?
-        </p>
-      </article>
+      <div class="habilidades">
+        <article class="item">
+          <span><i class="fa-brands fa-github"></i></span>
+          <h3>Git version control</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+            incidunt aperiam vel repellat in, voluptatum optio aspernatur quod.
+          </p>
+        </article>
 
-      <article>
-        <span><i class="fa-solid fa-mobile"></i></span>
-        <h3>App Design</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum incidunt
-          aperiam vel repellat in, voluptatum optio aspernatur quod labore
-          mollitia ipsum pariatur ea dicta esse?
-        </p>
-      </article>
+        <article class="item">
+          <span><i class="fa-solid fa-mobile"></i></span>
+          <h3>App Design</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+            incidunt aperiam vel repellat in, voluptatum optio aspernatur quod.
+          </p>
+        </article>
 
-      <article>
-        <span><i class="fa-solid fa-database"></i></span>
-        <h3>Back-end Development</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum incidunt
-          aperiam vel repellat in, voluptatum optio aspernatur quod labore
-          mollitia ipsum pariatur ea dicta esse?
-        </p>
-      </article>
+        <article class="item">
+          <span><i class="fa-solid fa-database"></i></span>
+          <h3>Back-end Development</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+            incidunt aperiam vel repellat in, voluptatum optio aspernatur.
+          </p>
+        </article>
 
-      <article>
-        <span><i class="fa-solid fa-globe"></i></span>
-        <h3>Web Development</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum incidunt
-          aperiam vel repellat in, voluptatum optio aspernatur quod labore
-          mollitia ipsum pariatur ea dicta esse?
-        </p>
-      </article>
+        <article class="item">
+          <span><i class="fa-solid fa-globe"></i></span>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+            incidunt aperiam vel repellat in, voluptatum optio aspernatur quod.
+          </p>
+        </article>
 
-      <article>
-        <span><i class="fa-solid fa-camera"></i></span>
-        <h3>Photography</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum incidunt
-          aperiam vel repellat in, voluptatum optio aspernatur quod labore
-          mollitia ipsum pariatur ea dicta esse?
-        </p>
-      </article>
+        <article class="item">
+          <span><i class="fa-solid fa-camera"></i></span>
+          <h3>Photography</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+            incidunt aperiam vel repellat in, voluptatum optio aspernatur quod
+            labore.
+          </p>
+        </article>
 
-      <article>
-        <span><i class="fa-solid fa-laptop-code"></i></span>
-        <h3>Freelancing</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum incidunt
-          aperiam vel repellat in, voluptatum optio aspernatur quod labore
-          mollitia ipsum pariatur ea dicta esse?
-        </p>
-      </article>
+        <article class="item">
+          <span><i class="fa-solid fa-laptop-code"></i></span>
+          <h3>Freelancing</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+            incidunt aperiam vel repellat in, voluptatum optio aspernatur quod.
+          </p>
+        </article>
+      </div>
     </section>
 
     <!-- Seccion contacto -->
-    <section>
+    <section class="container contacto">
       <h2>Connetc with me</h2>
       <form action="">
-        <input type="text" id="nombre" placeholder="Nombre" />
-        <input type="text" id="telefono" placeholder="Telefono" />
-        <input type="email" id="email" placeholder="Correo" />
+        <input class="input" type="text" id="nombre" placeholder="Nombre" />
+        <input class="input" type="text" id="telefono" placeholder="Telefono" />
+        <input class="input" type="email" id="email" placeholder="Correo" />
         <textarea
+          class="mensaje"
           name="message"
-          cols="30"
-          rows="10"
           placeholder="Mensaje"
         ></textarea>
-        <input type="submit" value="Submit" />
+        <input class="button" type="submit" value="Enviar" />
       </form>
     </section>
 
     <!-- Seccion footer -->
-    <footer>
-      <div>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-instagram"></i>
+    <footer class="footer">
+      <span></span>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
       <div>
-        <p>&#169; 2023All rights reserved</p>
+        <p>&#169; 2023 All rights reserved</p>
       </div>
     </footer>
   </body>
