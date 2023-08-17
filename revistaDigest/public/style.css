@@ -1,0 +1,55 @@
+/* ---------------- GOOGLE FONTS ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito+Sans:opsz@6..12&family=Roboto+Flex:opsz@8..144&display=swap");
+
+/* ---------------- VARIABLES O CUSTOM PROPERTIES ---------------- */
+
+:root {
+  --fondo1: rgb(30, 31, 32);
+  --gris: rgb(98, 99, 99);
+}
+
+/* ---------------- CONFIGURACIONES GENERALES ---------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo1);
+}
+
+/* ---------------- GLOBALES ---------------- */
+
+/* ---------------- UTILIDADES ---------------- */
+
+/* ---------------- SECCION DE HEADER ---------------- */
+
+header {
+  /* background-color: blue; */
+  padding: 4rem 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+header i {
+  font-size: 1.8rem;
+  color: var(--gris);
+  padding-bottom: 2px;
+}
+
+header h1 {
+  font-family: "Julius Sans One", sans-serif;
+  color: rgb(171, 171, 171);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 0 0;
+  }
+}
+
+@media (max-width: 425px) {
+}
