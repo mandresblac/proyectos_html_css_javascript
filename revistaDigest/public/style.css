@@ -115,6 +115,16 @@ a {
   gap: 15px;
 }
 
+/* ---------------- MEDIA QUERIE SECCION GALERIA ---------------- */
+
+@media (max-width: 768px) {
+  .galeria {
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------------- BOX 1 ---------------- */
 .galeria .box1 {
   height: 35rem;
