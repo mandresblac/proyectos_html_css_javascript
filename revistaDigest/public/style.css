@@ -6,9 +6,10 @@
 :root {
   --fondo1: rgb(30, 31, 32);
   --gris: rgb(98, 99, 99);
+  --blanco: #fff;
 }
 
-/* ---------------- CONFIGURACIONES GENERALES ---------------- */
+/* ---------------- CONFIGURACIONES O GENERALES ---------------- */
 
 * {
   margin: 0;
@@ -20,9 +21,42 @@ body {
   background-color: var(--fondo1);
 }
 
-/* ---------------- GLOBALES ---------------- */
+img {
+  max-width: 100%;
+  display: block; /* Para que no se agregue una separación en la parte inferior */
+  /* height: auto; */
+}
 
-/* ---------------- UTILIDADES ---------------- */
+.box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+h2 {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: bold;
+  font-size: 3.4rem;
+  color: var(--blanco);
+}
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--blanco);
+  font-size: 0.9rem;
+}
+
+.second-header {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+button {
+}
+
+a {
+  text-decoration: none;
+}
 
 /* ---------------- SECCION DE HEADER ---------------- */
 
@@ -33,7 +67,7 @@ body {
   align-items: center;
 }
 
-header {
+.main-header {
   /* background-color: blue; */
   width: 90%;
   padding: 4rem 0 0;
@@ -42,19 +76,20 @@ header {
   align-items: flex-end;
 }
 
-header i {
+.main-header i {
   font-size: 1.8rem;
   color: var(--gris);
   padding-bottom: 2px;
 }
 
-header h1 {
+.main-header h1 {
   font-family: "Julius Sans One", sans-serif;
   color: rgb(171, 171, 171);
+  font-size: 2.5rem;
 }
 
 @media (max-width: 768px) {
-  header {
+  .main-header {
     padding: 2rem 0 0;
   }
 }
@@ -62,23 +97,26 @@ header h1 {
 /* ---------------- SECCION DE GALERIA ---------------- */
 
 .galeria {
+  margin-top: 2rem;
   width: 90%;
-  justify-content: center;
-  align-items: center;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-auto-rows: 2fr;
+  gap: 15px;
 }
 
 .galeria .box1 {
-  padding: 20px;
+  height: 30rem;
   background-color: chocolate;
   grid-area: 1 / 1 / 2 / 7;
+  background-image: url(./img/img1.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .galeria .box2 {
-  padding: 20px;
+  min-height: 20px;
   background-color: violet;
   grid-area: 2 / 1 / 3 / 3;
 }
@@ -97,7 +135,7 @@ header h1 {
 
 .galeria .box5 {
   padding: 20px;
-  background-color: peru;
+  background-color: sienna;
   grid-area: 3 / 5 / 5 / 7;
 }
 
