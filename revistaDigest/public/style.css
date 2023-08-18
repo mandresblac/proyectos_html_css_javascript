@@ -46,12 +46,21 @@ h3 {
   font-size: 0.9rem;
 }
 
-.second-header {
-  margin-top: 2rem;
-  margin-left: 3rem;
+.box-header {
+  margin: 2rem 0 2rem 3rem;
 }
 
 button {
+  border: none;
+  background-color: transparent;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--blanco);
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid var(--blanco);
+  padding: 8px 12px;
+  margin: 0 0 2rem 3rem;
 }
 
 a {
@@ -104,22 +113,55 @@ a {
   gap: 15px;
 }
 
+/* ---------------- BOX 1 ---------------- */
 .galeria .box1 {
-  height: 30rem;
+  height: 35rem;
   background-color: chocolate;
   grid-area: 1 / 1 / 2 / 7;
   background-image: url(./img/img1.jpg);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
+/* ---------------- BOX 2 ---------------- */
 .galeria .box2 {
+  height: 20rem;
   min-height: 20px;
-  background-color: violet;
+  background-color: rgb(252, 81, 82);
   grid-area: 2 / 1 / 3 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+/* .box2 article::before {
+  content: "";
+  background-color: var(--blanco);
+  top: 0;
+  left: 0;
+} */
+
+.box2 article {
+  width: 80%;
+  color: var(--blanco);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.9rem;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.box p {
+  width: 80%;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--blanco);
+  text-align: left;
+}
+
+/* ---------------- BOX 3 ---------------- */
 
 .galeria .box3 {
   padding: 20px;
@@ -127,6 +169,7 @@ a {
   grid-area: 2 / 3 / 3 / 7;
 }
 
+/* ---------------- BOX 4 ---------------- */
 .galeria .box4 {
   padding: 20px;
   background-color: deeppink;
