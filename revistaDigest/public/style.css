@@ -204,8 +204,16 @@ a {
   grid-area: 3 / 5 / 5 / 7;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
+}
+
+.box5 .box-header {
+  margin: 2rem 0 0 2rem;
+}
+
+.box5 button {
+  margin: 0 0 2rem 2rem;
 }
 
 /* ---------------- BOX 6 ---------------- */
@@ -216,8 +224,16 @@ a {
   grid-area: 4 / 1 / 5 / 3;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
+}
+
+.box6 .box-header {
+  margin: 2rem 0 0 2rem;
+}
+
+.box6 button {
+  margin: 0 0 2rem 2rem;
 }
 
 /* ---------------- BOX 7 ---------------- */
@@ -235,8 +251,39 @@ a {
   grid-area: 4 / 3 / 5 / 5;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
+}
+
+.box7 .box-header {
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box7 h3 {
+  /* font-weight: normal; */
+  text-align: center;
+}
+
+.box7 h2 {
+  width: 85%;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3.5rem 0 1rem;
+}
+
+.box7 p {
+  width: 85%;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.box7 button {
+  margin: 0 0 2rem 0;
 }
 
 /* ---------------- BOX 8 ---------------- */
@@ -349,13 +396,52 @@ a {
 
   /* ---------------- BOX 5 ---------------- */
   .galeria .box5 {
+    height: 26rem;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
   /* ---------------- BOX 6 ---------------- */
   .galeria .box6 {
+    height: 26rem;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
+
+  /* ---------------- BOX 7 ---------------- */
   .galeria .box7 {
+    height: 26rem;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
+
+  .box7 .box-header {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .box7 h3 {
+    color: white;
+  }
+
+  .box7 h2 {
+    color: white;
+    text-align: left;
+  }
+
+  .box7 button {
+    margin: 0 0 2rem 2rem;
+  }
+
+  /* ---------------- BOX 8 ---------------- */
   .galeria .box8 {
   }
   .galeria .box9 {
