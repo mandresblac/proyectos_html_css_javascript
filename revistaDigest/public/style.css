@@ -28,7 +28,8 @@ img {
   /* height: auto; */
 }
 
-.box {
+.box,
+.card {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -73,14 +74,14 @@ a {
   text-decoration: none;
 }
 
-/* ---------------- SECCION DE HEADER ---------------- */
-
 .container {
   /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* ---------------- SECCION DE HEADER ---------------- */
 
 .main-header {
   /* background-color: blue; */
@@ -502,4 +503,46 @@ a {
   .box9 button {
     margin: 0 0 2rem 2rem;
   }
+}
+
+/* ---------------- SECCION DE PRODUCTS ---------------- */
+
+.products {
+  margin: 3rem 0;
+  width: 90%;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products h2 {
+  margin: 2rem 0;
+  color: var(--gris1);
+  font-size: 2rem;
+}
+
+.featured {
+  /* background-color: blue; */
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 3rem;
+}
+
+.featured .card {
+  background-color: red;
+  min-width: 15rem;
+  min-height: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured .card-1 {
+  /* background-image: url(./img/img9.jpg); */
 }
