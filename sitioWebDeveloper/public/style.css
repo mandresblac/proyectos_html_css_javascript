@@ -50,6 +50,7 @@ h3 {
 .container {
   margin: 15rem 6.5rem 8rem;
 }
+
 /* ---------------- SECCION DE ENCABEZADO ---------------- */
 
 .header {
@@ -80,6 +81,10 @@ h3 {
 
 .nav {
   display: flex;
+}
+
+.nav .btn-menu {
+  display: none;
 }
 
 .nav div {
@@ -150,13 +155,35 @@ h3 {
 
 @media (max-width: 425px) {
   .header {
-    position: relative;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+    /* margin: 0; */
+  }
+
+  .header h1 span {
+    font-size: 2.2rem;
   }
 
   .nav {
-    display: flex;
+    display: block;
+  }
+
+  .nav div {
+    display: none;
+    /* display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: start; */
+  }
+
+  .nav .btn-menu {
+    display: block;
   }
 }
 
