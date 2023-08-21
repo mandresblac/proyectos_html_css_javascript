@@ -87,20 +87,24 @@ h3 {
   display: none;
 }
 
-.nav div {
+.nav .menu {
+  display: flex;
+}
+
+.menu div {
   padding: 5px 0;
   font-size: 1.3rem;
   margin-left: 30px;
   cursor: pointer;
 }
 
-.nav div i {
+.menu div i {
   color: var(--rojo);
   margin-right: 3px;
   font-size: 1.5rem;
 }
 
-.nav div:hover {
+.menu div:hover {
   border-bottom: 1px solid var(--blanco);
 }
 
@@ -126,21 +130,25 @@ h3 {
 
 @media (max-width: 789px) {
   .header {
-    padding: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .header h1 {
     text-align: center;
   }
 
-  .nav {
+  .nav .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     row-gap: 1rem;
   }
 
-  .nav div {
+  .menu div {
     padding-top: 10px;
     display: flex;
     justify-content: center;
@@ -148,7 +156,7 @@ h3 {
     margin: 0;
   }
 
-  .nav div i {
+  .menu div i {
     margin-right: 12px;
   }
 }
@@ -157,7 +165,7 @@ h3 {
   .header {
     padding: 0 1.5rem;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
@@ -171,23 +179,28 @@ h3 {
     font-size: 2.2rem;
   }
 
-  .nav {
+  .nav .btn-menu {
     display: block;
+    padding: 0;
   }
 
-  .nav div {
+  .nav .btn-menu:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+  }
+
+  .btn-menu .fa-solid {
+    margin: 0;
+    padding: 7px 10px;
+    color: var(--rojo);
+    font-size: 1.6rem;
+  }
+
+  .nav .menu {
     display: none;
     /* display: flex;
     flex-direction: column;
     align-items: start; */
-  }
-
-  .nav .btn-menu {
-    display: block;
-  }
-
-  .nav .btn-menu:hover {
-    border: none;
   }
 }
 
@@ -314,7 +327,7 @@ h3 {
     align-items: center;
   }
   .servicios h2 {
-    font-size: 1.85rem;
+    font-size: 3rem;
   }
 
   .habilidades {
