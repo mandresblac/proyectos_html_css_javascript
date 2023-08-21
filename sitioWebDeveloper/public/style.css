@@ -188,15 +188,17 @@ h3 {
   }
 
   .nav .btn-menu:hover {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-color: rgb(35, 35, 40);
   }
 
   .btn-menu .fa-solid {
     margin: 0;
-    padding: 7px 10px;
+    padding: 12px;
     color: var(--rojo);
     font-size: 1.6rem;
+    background-color: ;
   }
 
   .nav .menu {
