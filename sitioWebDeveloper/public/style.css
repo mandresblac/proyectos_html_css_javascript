@@ -182,6 +182,9 @@ h3 {
   .nav .btn-menu {
     display: block;
     padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 
   .nav .btn-menu:hover {
@@ -194,6 +197,13 @@ h3 {
     padding: 7px 10px;
     color: var(--rojo);
     font-size: 1.6rem;
+  }
+
+  .nav .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav .menu {
