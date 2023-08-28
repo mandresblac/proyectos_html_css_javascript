@@ -6,7 +6,7 @@ switcher.addEventListener("click", function () {
 
   // Para cambiar el texto del boton
   const className = document.body.className;
-  if (className == "light-theme") {
+  if (className === "light-theme") {
     this.textContent = "Dark";
   } else {
     this.textContent = "Light";
