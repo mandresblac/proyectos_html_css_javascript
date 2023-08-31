@@ -82,6 +82,8 @@ body {
     /* width: 200px; */
     overflow: visible;
     z-index: 1000;
+
+    /* Mostrar y ocultar */
     opacity: 0;
     visibility: hidden;
   }

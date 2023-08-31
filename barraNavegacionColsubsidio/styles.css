@@ -1,0 +1,170 @@
+/* ------------ ESTILOS GENERALES ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ------------ ESTILOS DEL HEADER ------------ */
+
+header {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.2);
+  position: fixed;
+}
+
+.logo {
+  padding-left: 9px;
+}
+
+.logo img {
+  width: 125px;
+  height: 43px;
+}
+
+.header-portales {
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(198, 212, 231);
+  padding: 3px 10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 139px;
+}
+
+.header-portales:hover {
+  background-color: rgb(246, 246, 246);
+}
+
+.header-link-empresas {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: left; */
+  color: rgb(40, 122, 163);
+  /* margin-top: -0%; */
+}
+
+.header-link-empresas span {
+  position: relative;
+  top: 4px;
+  /* display: block; */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-link-personas {
+  color: rgb(40, 122, 163);
+  display: block;
+  /* Para ocultar el menu */
+  height: 0;
+  overflow: hidden;
+
+  /* Animacion del menu */
+  transition: all 0.3s linear;
+}
+
+/* ------------ ESTILOS DEL MENU ------------ */
+.main-nav {
+  position: relative;
+}
+
+.btn-container {
+  background-color: rgb(255, 208, 0);
+  padding: 10px 12px;
+  height: 100%;
+}
+
+.btn-container:hover {
+  background-color: rgb(216, 184, 42);
+}
+
+.icon-bars {
+  display: block;
+  color: rgba(0, 0, 0, 09);
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.9em;
+  /* margin-left: ; */
+}
+
+.menu {
+  background-color: rgb(255, 208, 0);
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Para ocultar el menu */
+  height: 0;
+  overflow: hidden;
+
+  /* Animacion del menu */
+  transition: height 0.3s linear;
+}
+
+.menu li {
+  width: 100%;
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: rgb(216, 184, 42);
+}
+
+.menu__link {
+  position: relative;
+  color: rgb(40, 122, 163);
+  font-size: 1.4rem;
+}
+
+.menu__link span {
+  position: absolute;
+  top: 3px;
+  right: -28px;
+}
+/* Para mostrar el menu */
+.mostrar {
+  height: 205px; /* Altura del menu */
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+@media screen and (min-width: 480px) {
+}
