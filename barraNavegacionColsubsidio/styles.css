@@ -62,15 +62,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: left; */
   color: rgb(40, 122, 163);
-  /* margin-top: -0%; */
 }
 
 .header-link-empresas span {
   position: relative;
   top: 4px;
-  /* display: block; */
+  display: block;
   font-weight: bold;
   font-size: 20px;
 }
@@ -78,12 +76,7 @@ header {
 .header-link-personas {
   color: rgb(40, 122, 163);
   display: block;
-  /* Para ocultar el menu */
-  height: 0;
-  overflow: hidden;
-
-  /* Animacion del menu */
-  transition: all 0.3s linear;
+  display: none;
 }
 
 /* ------------ ESTILOS DEL MENU ------------ */
@@ -166,5 +159,47 @@ header {
 
 /* ------------ MEDIA QUERIES ------------ */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .logo img {
+    width: 140px;
+    height: 43px;
+  }
+  .header-portales {
+    width: 200px;
+    /* height: 60px; */
+    border: none;
+    cursor: initial;
+    position: absolute;
+    left: 170px;
+    border: none;
+    border-radius: 0;
+  }
+  /* Para eliminar pseudoclase :hover del elemento con clase .header-portales */
+  .header-portales:hover {
+    background-color: initial;
+  }
+  .header-portales ul {
+    border-radius: 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-portales a {
+    /* background-color: rgb(215, 184, 164); */
+    height: 61px;
+    line-height: 60px;
+    font-size: 1.2rem;
+    display: block;
+    margin: 0 10px;
+  }
+  .header-portales a:hover {
+    border-bottom: 7px solid rgb(0, 103, 177);
+    /* Animacion del menu */
+    transition: all 0.3s;
+  }
+
+  .header-link-empresas span {
+    display: none;
+  }
 }
