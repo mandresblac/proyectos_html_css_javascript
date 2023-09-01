@@ -104,7 +104,6 @@ header {
   text-align: center;
   cursor: pointer;
   font-size: 1.9em;
-  /* margin-left: ; */
 }
 
 .menu {
@@ -157,7 +156,7 @@ header {
   height: 205px; /* Altura del menu */
 }
 
-/* ------------ MEDIA QUERIES ------------ */
+/* -------------- MEDIA QUERIES -------------- */
 
 @media screen and (min-width: 768px) {
   .logo img {
@@ -166,7 +165,6 @@ header {
   }
   .header-portales {
     width: 200px;
-    /* height: 60px; */
     border: none;
     cursor: initial;
     position: absolute;
@@ -186,7 +184,6 @@ header {
     align-items: center;
   }
   .header-portales a {
-    /* background-color: rgb(215, 184, 164); */
     height: 61px;
     line-height: 60px;
     font-size: 1.2rem;
@@ -201,5 +198,45 @@ header {
 
   .header-link-empresas span {
     display: none;
+  }
+
+  /* -------------- MENU -------------- */
+
+  .main-nav {
+    position: static;
+  }
+
+  .btn-container {
+    display: none;
+  }
+  .btn-container:hover {
+    background-color: initial;
+  }
+
+  .menu {
+    /* width: 100%; */
+    background-color: transparent;
+    transition: none; /* Elimina la transición */
+    top: 0;
+    left: 0px;
+    cursor: initial;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: initial;
+    /* height: 0px;  */
+  }
+  .menu li {
+    padding: 0;
+  }
+
+  .menu li:hover {
+    background-color: initial;
+  }
+
+  .mostrar {
+    height: 0px;
   }
 }
