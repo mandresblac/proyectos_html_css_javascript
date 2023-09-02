@@ -104,6 +104,7 @@ img {
 /* ------------------- ESTILOS DEL BANNER ------------------- */
 .banner {
   margin-top: -60px; /* height del header es 60px, por eso se resta -60px */
+  margin-bottom: 1.8rem;
 
   /* Colocar imagen del banner atras de todos los elementos */
   position: relative;
@@ -125,3 +126,9 @@ img {
 }
 
 /* ------------------- ESTILOS DEL MAIN - INFO ------------------- */
+.info__columna {
+  background-color: #fba919;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1.8rem;
+}
