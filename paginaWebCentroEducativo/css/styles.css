@@ -27,6 +27,12 @@ img {
   max-width: 100%;
 }
 
+.section__title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fba919;
+}
+
 /* ------------------- ESTILOS DEL HEADER ------------------- */
 .header {
   height: 60px;
@@ -64,6 +70,21 @@ img {
   margin: 10px 6px 0 0;
 }
 
+.icon-close {
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 3rem;
+  font-size: 1.9rem;
+  background-color: #fba919;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  visibility: hidden; /* Oculta el boton icon-close */
+}
 /* ------------------- ESTILOS DEL NAV Y MENU ------------------- */
 .nav {
   /* background-color: cyan; */
@@ -97,8 +118,18 @@ img {
 }
 
 /* Hace que el nav se muestre */
-.mostrar {
+.mostrar-nav {
   right: 0;
+}
+
+/* Oculta boton */
+.ocultar-btn-menu {
+  visibility: hidden;
+}
+
+/* Muestra boton */
+.mostrar-btn-menu {
+  visibility: visible;
 }
 
 /* ------------------- ESTILOS DEL BANNER ------------------- */
@@ -131,4 +162,56 @@ img {
   color: white;
   padding: 1rem;
   margin-bottom: 1.8rem;
+}
+
+/* ------------------- ESTILOS DE CURSOS ------------------- */
+.cursos__columna {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.cursos__descripcion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  height: 100%;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.cursos__title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* ------------------- ESTILOS DEL FOOTER ------------------- */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer .social [class^="icon-"] {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 10px 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+}
+
+.footer .copy {
+  margin-top: 15px;
+  font-size: 1.1rem;
 }
