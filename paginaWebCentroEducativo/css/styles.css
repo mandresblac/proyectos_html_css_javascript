@@ -1,0 +1,82 @@
+/* -------------- FUENTES TIPOGRAFICAS GOOGLE FONTS -------------- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Yanone+Kaffeesatz&display=swap");
+
+/* ------------------- ESTILOS GENERALES ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 1.5px; /* Espacio entre cada letra */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ------------------- ESTILOS PARA EL HEADER ------------------- */
+.header {
+  height: 60px;
+}
+
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,
+.icon-menu {
+  margin: 5px;
+}
+
+.icon-menu {
+  display: block; /* Para convertir el span en un elemento de bloque */
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 3rem;
+  font-size: 1.9rem;
+  background-color: #fba919;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ------------------- ESTILOS PARA NAV ------------------- */
+.nav {
+  /* background-color: cyan; */
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu__link {
+  display: block;
+  padding: 1rem;
+  background-color: #fba919;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__link:hover {
+  background-color: white;
+  color: #fba919;
+}
