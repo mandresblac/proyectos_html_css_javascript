@@ -27,7 +27,7 @@ img {
   max-width: 100%;
 }
 
-/* ------------------- ESTILOS PARA EL HEADER ------------------- */
+/* ------------------- ESTILOS DEL HEADER ------------------- */
 .header {
   height: 60px;
 }
@@ -37,9 +37,17 @@ img {
   justify-content: space-between;
 }
 
-.logo,
-.icon-menu {
+.logo {
+  width: 3rem;
+  height: 3rem;
   margin: 5px;
+}
+.header__title {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  font-size: 1.5rem;
+  color: rgb(44, 43, 43);
 }
 
 .icon-menu {
@@ -53,15 +61,21 @@ img {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
+  margin: 10px 6px 0 0;
 }
 
-/* ------------------- ESTILOS PARA NAV ------------------- */
+/* ------------------- ESTILOS DEL NAV Y MENU ------------------- */
 .nav {
   /* background-color: cyan; */
   position: absolute;
   top: 65px;
-  left: 0;
   width: 100%;
+
+  /* Oculta el nav a la derecha, luego aparecera con la clase mostrar */
+  right: -100%;
+
+  /* Transicion para cuando el nav aparece  */
+  transition: all 0.5s;
 }
 
 .menu {
@@ -76,7 +90,38 @@ img {
   color: #fff;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.select {
   background-color: white;
   color: #fba919;
 }
+
+/* Hace que el nav se muestre */
+.mostrar {
+  right: 0;
+}
+
+/* ------------------- ESTILOS DEL BANNER ------------------- */
+.banner {
+  margin-top: -60px; /* height del header es 60px, por eso se resta -60px */
+
+  /* Colocar imagen del banner atras de todos los elementos */
+  position: relative;
+  z-index: -10;
+}
+
+.banner .contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); /* centra ele elemento */
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.banner__texto {
+  display: none;
+}
+
+/* ------------------- ESTILOS DEL MAIN - INFO ------------------- */
