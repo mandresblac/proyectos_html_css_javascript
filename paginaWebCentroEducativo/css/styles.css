@@ -31,6 +31,7 @@ img {
   text-align: center;
   font-size: 2.5rem;
   color: #fba919;
+  margin-bottom: 1.3rem;
 }
 
 /* ------------------- ESTILOS DEL HEADER ------------------- */
@@ -152,6 +153,10 @@ img {
   text-align: center;
 }
 
+.banner__title {
+  color: #000000;
+}
+
 .banner__texto {
   display: none;
 }
@@ -214,4 +219,85 @@ img {
 .footer .copy {
   margin-top: 15px;
   font-size: 1.1rem;
+}
+
+/* ---------------------- MEDIA QUERIES ---------------------- */
+@media (min-width: 480px) {
+  .logo {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .header__title {
+    position: absolute;
+    top: 30px;
+    left: 65px;
+    font-size: 1.9rem;
+  }
+  .icon-menu {
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .icon-close {
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .banner__title {
+    font-size: 2.1rem;
+  }
+  .banner__texto {
+    display: block;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 600;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -75px;
+  }
+  .info__columna {
+    width: 32%;
+  }
+  .info__title {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .info__texto {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .cursos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .section__title {
+    width: 100%;
+  }
+  .cursos__columna {
+    width: 48%;
+  }
+  .footer .social [class^="icon-"] {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner__title {
+    font-size: 2.8rem;
+  }
+  .section__title {
+    width: 100%;
+    font-size: 3.3rem;
+  }
+  .cursos__title {
+    font-size: 3rem;
+  }
+  .cursos__texto {
+    font-size: 1.1rem;
+  }
 }
