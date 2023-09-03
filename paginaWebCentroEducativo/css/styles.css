@@ -316,12 +316,13 @@ img {
 
 @media (min-width: 1024px) {
   .header .contenedor {
+    position: relative;
     width: 1000px;
   }
   .header__title {
     position: absolute;
     top: 30px;
-    left: 120px;
+    left: 70px;
     font-size: 1.9rem;
   }
   .icon-menu {
