@@ -34,6 +34,10 @@ img {
   margin-bottom: 1.3rem;
 }
 
+.contenedor {
+  margin: auto;
+  width: 94%;
+}
 /* ------------------- ESTILOS DEL HEADER ------------------- */
 .header {
   height: 60px;
@@ -52,12 +56,15 @@ img {
 .header__title {
   position: absolute;
   top: 30px;
-  left: 60px;
+  left: 70px;
   font-size: 1.5rem;
   color: rgb(44, 43, 43);
 }
 
 .icon-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: block; /* Para convertir el span en un elemento de bloque */
   width: 2.5rem;
   height: 2.5rem;
@@ -68,16 +75,15 @@ img {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px 6px 0 0;
 }
 
 .icon-close {
   position: absolute;
   top: 10px;
-  right: 6px;
+  right: 10px;
   width: 2.5rem;
   height: 2.5rem;
-  line-height: 3rem;
+  line-height: 2.9rem;
   font-size: 1.9rem;
   background-color: #fba919;
   color: #fff;
@@ -230,7 +236,7 @@ img {
   .header__title {
     position: absolute;
     top: 30px;
-    left: 65px;
+    left: 85px;
     font-size: 1.9rem;
   }
   .icon-menu {
@@ -287,6 +293,12 @@ img {
 }
 
 @media (min-width: 768px) {
+  .header__title {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    font-size: 1.9rem;
+  }
   .banner__title {
     font-size: 2.8rem;
   }
@@ -299,5 +311,81 @@ img {
   }
   .cursos__texto {
     font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .contenedor {
+    width: 1000px;
+  }
+  .header__title {
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    font-size: 1.9rem;
+  }
+  .icon-menu {
+    display: none; /* Ocultamos los botones de menu */
+  }
+  .icon-close {
+    display: none; /* Ocultamos los botones de menu */
+  }
+  .nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .menu__link {
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: #333;
+  }
+  .select {
+    background-color: #fba919;
+    color: #fff;
+  }
+
+  .banner__img {
+    width: 100%;
+  }
+  .banner__title {
+    font-size: 3.6rem;
+  }
+  .banner__texto {
+    font-size: 1.5rem;
+  }
+
+  .info {
+    margin-top: -90px;
+  }
+  .info__columna {
+    padding: 1.5rem;
+  }
+  .info__title {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .section__title {
+    width: 100%;
+    font-size: 3.7rem;
+  }
+  .cursos__descripcion {
+    padding: 1.2rem;
+  }
+  .cursos__title {
+    font-size: 3.6rem;
+  }
+  .cursos__texto {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contenedor {
+    width: 1100px;
   }
 }
