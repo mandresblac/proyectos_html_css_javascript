@@ -1,0 +1,141 @@
+/* -------------- FUENTES TIPOGRAFICAS GOOGLE FONTS -------------- */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/* ------------------- ESTILOS GENERALES ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.contenedor {
+  margin: auto;
+  width: 100vw;
+}
+
+/* ------------------- ESTILOS DEL HEADER ------------------- */
+
+.header {
+  width: 100vw;
+}
+
+.header .contenedor {
+  position: relative;
+  background-color: transparent;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 10px;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.header__title {
+  position: absolute;
+  font-size: 1.5rem;
+  left: 55px;
+}
+
+.contenedor [class^="icon-"] {
+  display: block;
+  background-color: rgb(0, 126, 106);
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.9rem;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contenedor .icon-sun,
+.contenedor .icon-cancel {
+  visibility: hidden;
+  position: absolute;
+}
+.contenedor .icon-search {
+  position: absolute;
+  right: 100px;
+}
+.contenedor .icon-moon {
+  position: absolute;
+  right: 55px;
+}
+
+.contenedor .icon-sun {
+  position: absolute;
+  right: 55px;
+}
+
+.contenedor .icon-menu {
+  position: absolute;
+  right: 10px;
+}
+
+.contenedor .icon-cancel {
+  right: 10px;
+}
+
+/* ------------------- ESTILOS DEL NAV Y MENU ------------------- */
+
+.nav {
+  background-color: rgb(57, 127, 106);
+  position: absolute;
+
+  top: 65px;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu .menu__item {
+  width: 100%;
+}
+
+.menu .menu__link {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menu .menu__link:hover {
+  background-color: rgb(25, 80, 90);
+  color: rgb(234, 228, 228);
+}
+
+.menu__link [class^="icon-"] {
+  display: none;
+}
