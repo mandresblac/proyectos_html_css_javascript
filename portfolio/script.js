@@ -1,10 +1,11 @@
+/* ------------ VARIABLES ------------ */
 const btnMenu = document.querySelector("#btn-menu");
 const btnClose = document.querySelector("#btn-cancel");
-const nav = document.querySelector("#nav");
 const btnDarkTheme = document.querySelector("#btn-dark-theme");
 const btnlightTheme = document.querySelector("#btn-light-theme");
+const nav = document.querySelector("#nav");
 
-/* Eventos para mostrar menu de na vegacion */
+/* ------- Eventos para mostrar menu de navegacion ------- */
 btnMenu.addEventListener("click", () => {
   if (nav.classList.toggle("mostrar-nav")) {
     btnMenu.classList.toggle("ocultar-btn");
@@ -22,7 +23,7 @@ btnClose.addEventListener("click", () => {
   }
 });
 
-/* Evento para cambiar de modo claro a oscuro */
+/* ------- Eventos para cambiar de tema claro a oscuro ------- */
 btnDarkTheme.addEventListener("click", () => {
   document.body.classList.toggle("light-theme");
   document.body.classList.toggle("dark-theme");
