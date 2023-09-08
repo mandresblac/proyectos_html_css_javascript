@@ -87,6 +87,15 @@ li {
   visibility: hidden;
   position: absolute;
   right: 55px;
+  background-color: rgb(32, 94, 83);
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.9rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .icon-menu {
@@ -165,12 +174,27 @@ li {
 }
 
 /* Muestra boton */
-.mostrar-btn-menu {
+.mostrar-btn {
   visibility: visible;
   z-index: 20;
 }
 
 /* Oculta boton */
-.ocultar-btn-menu {
+.ocultar-btn {
   visibility: hidden;
+}
+
+/* ------------------- ESTILOS PARA MODO CLARO Y OSCURO ------------------- */
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.mostrar-btn-light {
+  visibility: visible;
 }
