@@ -228,10 +228,14 @@ li {
   .icon-search {
     position: absolute;
     top: 25px;
-    right: 35px;
+    right: 45px;
     color: #fff;
     background-color: transparent;
     font-size: 1.6rem;
+  }
+  .icon-search:hover {
+    background-color: rgba(249, 244, 244, 0.2);
+    border-radius: 50%;
   }
   .icon-moon {
     position: absolute;
@@ -241,6 +245,10 @@ li {
     background-color: transparent;
     font-size: 1.6rem;
   }
+  .icon-moon:hover {
+    background-color: rgba(249, 244, 244, 0.2);
+    border-radius: 50%;
+  }
   .icon-sun {
     position: absolute;
     top: 25px;
@@ -248,6 +256,10 @@ li {
     color: #fff;
     background-color: transparent;
     font-size: 1.6rem;
+  }
+  .icon-sun:hover {
+    background-color: rgba(249, 244, 244, 0.2);
+    border-radius: 50%;
   }
   .icon-menu {
     display: none;
@@ -260,7 +272,7 @@ li {
     background-color: transparent;
     position: absolute;
     top: 20px;
-    right: 70px;
+    right: 80px;
     z-index: none;
     padding: 0;
     transition: none;
@@ -287,7 +299,7 @@ li {
   }
   .menu .menu__link:hover {
     background-color: transparent;
-    color: black;
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .menu__link [class^="icon-"] {
@@ -303,8 +315,8 @@ li {
   }
 
   .menu .menu__link-contratarme:hover {
-    background-color: rgb(45, 145, 129);
-    color: black;
+    background-color: rgba(249, 244, 244, 0.2);
+    color: white;
   }
 }
 
@@ -380,7 +392,7 @@ li {
 
 .contenedor__button-2 {
   background-color: rgba(239, 233, 233, 0.1);
-  border: 1px solid white;
+  border: 1px solid rgba(239, 233, 233, 0.5);
   padding: 10px 20px;
   border-radius: 50px;
   color: white;
@@ -412,5 +424,11 @@ li {
   }
   .contenedor__button-1 {
     margin-right: 20px;
+  }
+  .contenedor__button-1:hover {
+    background-color: rgba(239, 233, 233, 0.2);
+  }
+  .contenedor__button-2:hover {
+    background-color: rgba(249, 244, 244, 0.2);
   }
 }
