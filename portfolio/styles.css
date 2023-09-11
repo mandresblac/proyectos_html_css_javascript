@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /* scroll-behavior con el valor smooth generar una animacion de movimiento en la pantalla (de scroll) al dar click en un enlace del temario la pantalla se mueve al tema correspondiente */
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -29,6 +33,21 @@ li {
 .contenedor {
   margin: auto;
   width: 100vw;
+}
+
+/* Icono para devolver al inicio */
+.icon-up-dir {
+  /* display: block; */
+  background-color: rgba(239, 233, 233, 0.25);
+  width: 2.4rem;
+  height: 2.4rem;
+  /* line-height: 2rem; */
+  font-size: 2.4rem;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 /* ------------------- ESTILOS DEL HEADER ------------------- */
@@ -432,3 +451,5 @@ li {
     background-color: rgba(249, 244, 244, 0.2);
   }
 }
+
+/* ------------------- ESTILOS DEL ABOUT ------------------- */
