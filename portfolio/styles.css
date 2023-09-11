@@ -37,17 +37,21 @@ li {
 
 /* Icono para devolver al inicio */
 .icon-up-dir {
-  /* display: block; */
-  background-color: rgba(239, 233, 233, 0.25);
-  width: 2.4rem;
-  height: 2.4rem;
-  /* line-height: 2rem; */
-  font-size: 2.4rem;
-  color: #000;
+  margin: 5px;
+  display: block;
+  background-color: rgb(0, 126, 106);
+  width: 2.9rem;
+  height: 2.9rem;
+  line-height: 2.9rem;
+  font-size: 2.7rem;
+  color: #fff;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
   border-radius: 50%;
+}
+.icon-up-dir:hover {
+  background-color: rgb(2, 90, 75);
 }
 
 /* ------------------- ESTILOS DEL HEADER ------------------- */
