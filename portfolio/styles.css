@@ -37,11 +37,13 @@ li {
 
 /* Icono para devolver al inicio */
 .icon-up-dir {
+  position: absolute;
+  right: 15px;
   margin: 5px;
   display: block;
   background-color: rgb(0, 126, 106);
-  width: 2.9rem;
-  height: 2.9rem;
+  width: 2.8rem;
+  height: 2.8rem;
   line-height: 2.9rem;
   font-size: 2.7rem;
   color: #fff;
@@ -374,10 +376,10 @@ li {
   position: absolute;
   padding: 0 15px;
   bottom: 70px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
-  /* margin: auto; */
 }
 
 .banner .banner__title {
@@ -404,6 +406,7 @@ li {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  /* max-width: 95%; */
 }
 
 .contenedor__button-1 {
@@ -457,3 +460,55 @@ li {
 }
 
 /* ------------------- ESTILOS DEL ABOUT ------------------- */
+
+.about__content__image {
+  background-color: rgb(207, 207, 207);
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.about_image {
+  height: 380px;
+  margin: auto;
+}
+
+.about__content {
+  padding: 30px 15px 20px;
+}
+
+.about__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: rgb(150, 150, 150);
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  margin-bottom: 30px;
+  text-align: justify;
+  color: rgb(150, 150, 150);
+}
+
+.about__person {
+  /* display: flex; */
+}
+
+.about__person p {
+  font-weight: bold;
+}
+
+.about__person span {
+  font-weight: normal;
+}
+
+.contenedor__buttons {
+  margin-bottom: 10px;
+}
+
+.contenedor__button-2 {
+  background-color: rgb(0, 193, 110);
+}
