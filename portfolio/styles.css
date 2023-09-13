@@ -419,12 +419,24 @@ li {
   color: white;
 }
 
+.contenedor__button-1:hover {
+  background-color: rgba(239, 233, 233, 0.2);
+  color: rgb(0, 193, 110);
+  box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
 .contenedor__button-2 {
   background-color: rgba(239, 233, 233, 0.1);
   border: 1px solid rgba(239, 233, 233, 0.5);
   padding: 10px 20px;
   border-radius: 50px;
   color: white;
+}
+
+.contenedor__button-2:hover {
+  background-color: rgba(249, 244, 244, 0.2);
+  color: rgb(0, 193, 110);
+  box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ---------------------- MEDIA QUERIES DEL BANNER ---------------------- */
@@ -454,12 +466,6 @@ li {
   .contenedor__button-1 {
     margin-right: 20px;
   }
-  .contenedor__button-1:hover {
-    background-color: rgba(239, 233, 233, 0.2);
-  }
-  .contenedor__button-2:hover {
-    background-color: rgba(249, 244, 244, 0.2);
-  }
 }
 
 /* ------------------- ESTILOS DEL ABOUT ------------------- */
@@ -468,7 +474,7 @@ li {
   background-color: rgb(207, 207, 207);
   display: flex;
   align-items: center;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .about_image {
@@ -495,10 +501,6 @@ li {
   margin-bottom: 30px;
   text-align: justify;
   color: rgb(150, 150, 150);
-}
-
-.about__person {
-  /* display: flex; */
 }
 
 .about__person p {
@@ -541,7 +543,7 @@ li {
   .about {
     width: 80%;
     margin: auto;
-    padding: 40px 0;
+    padding: 100px 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -573,10 +575,6 @@ li {
   .about__title {
     font-size: 1.2rem;
   }
-  /* .contenedor__buttons {
-    flex-direction: row;
-    gap: 0;
-  } */
 }
 
 @media (min-width: 1024px) {
@@ -596,13 +594,14 @@ li {
   }
   .about__person__date {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
     column-gap: 50px;
     row-gap: 8px;
   }
   .contenedor__buttons {
     flex-direction: row;
+    justify-content: start;
     gap: 0;
   }
   .about__person p {
