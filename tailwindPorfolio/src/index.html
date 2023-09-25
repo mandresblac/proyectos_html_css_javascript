@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Tailwind Css -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- Iconos Fontastic -->
+    <link
+      href="https://file.myfontastic.com/RtSY5kqaUYyEhjPyDkQAe9/icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="flex justify-between pt-2 pb-3 px-4 shadow-md">
+      <h1 class="text-3xl text-gray-500 font-sans font-bold leading-7">
+        manuel <br />
+        <span class="text-gray-800 tracking-wider">blanco</span>
+      </h1>
+
+      <div class="flex justify-center items-center">
+        <span class="icon-moon text-3xl mr-4 relative top-2"></span>
+        <span
+          class="icon-sun text-3xl absolute right-32 top-7 invisible"
+        ></span>
+
+        <p class="text-2xl sm:invisible" id="btn-menu">
+          Menu<span class="icon-menu ml-1 text-3xl relative top-2"></span>
+        </p>
+
+        <span
+          class="icon-cancel text-5xl absolute right-2 top-4 invisible"
+          id="btn-cancel"
+        ></span>
+      </div>
+
+      <nav class="invisible sm:visible absolute" id="nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Servicios</a></li>
+          <li><a href="">Habilidades</a></li>
+          <li><a href="">Trabajos</a></li>
+          <li><a href="">Contacto</a></li>
+          <li><a href="">Contrataciones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="app.js"></script>
+  </body>
+</html>
