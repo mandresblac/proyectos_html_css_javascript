@@ -16,7 +16,7 @@
   </head>
   <body>
     <header
-      class="flex justify-between pt-2 pb-3 px-4 shadow-md relative z-auto bg-white"
+      class="flex justify-between pt-2 pb-3 px-4 shadow-md relative z-auto bg-white sm:flex-row"
       id="header"
     >
       <h1 class="text-3xl text-gray-500 font-sans font-bold leading-7">
@@ -26,49 +26,66 @@
 
       <div class="flex justify-center items-center">
         <span
-          class="icon-moon text-2xl mr-4 absolute top-7 right-10 cursor-pointer hover:text-gray-600"
+          class="icon-moon text-2xl mr-4 absolute top-7 right-10 cursor-pointer hover:text-gray-600 sm:static"
           id="dark-theme"
         ></span>
         <span
-          class="icon-sun text-2xl mr-4 absolute top-7 right-11 cursor-pointer hover:text-gray-600 invisible"
+          class="icon-sun text-2xl mr-4 absolute top-7 right-11 cursor-pointer hover:text-gray-600 invisible sm:static"
           id="light-theme"
         ></span>
 
-        <p class="text-2xl right-6 sm:invisible" id="btn-menu">
+        <p class="text-2xl right-6 sm:invisible sm:static-0" id="btn-menu">
           <span
-            class="icon-menu ml-1 text-3xl relative top-2 cursor-pointer hover:text-gray-600"
+            class="icon-menu ml-1 text-3xl relative top-2 cursor-pointer hover:text-gray-600 sm:static-0"
           ></span>
         </p>
 
-        <p class="text-2xl invisible absolute right-2 top-3" id="btn-cancel">
+        <p
+          class="text-2xl invisible sm:invisible absolute right-2 top-3 sm:static-0"
+          id="btn-cancel"
+        >
           <span
-            class="icon-cancel text-4xl relative top-3 right-1 cursor-pointer hover:text-gray-600"
+            class="icon-cancel text-4xl relative top-3 right-1 cursor-pointer hover:text-gray-600 sm:static-0"
           ></span>
         </p>
       </div>
 
       <nav
-        class="w-full flex flex-col justify-center items-center sm:visible absolute -top-52 left-0 -z-10 transition-all duration-500"
+        class="w-full flex flex-col justify-center items-center absolute -top-60 left-0 -z-10 transition-all duration-500 sm:static sm:z-0 sm:flex-row sm:w-auto"
         id="nav"
       >
-        <ul class="w-full px-5">
-          <li class="py-2 border-b border-gray-300">
+        <ul class="flex flex-col w-full px-5 sm:flex-row sm:px-0">
+          <li
+            class="py-2 border-b-2 border-gray-300 cursor-pointer hover:border-b-2 hover:border-red-700 hover:transition-all hover:duration-200 hover:text-gray-500 sm:py-0"
+          >
             <a class="text-xl" href="">Home</a>
           </li>
-          <li class="py-2 border-b border-gray-300">
+          <li
+            class="py-2 border-b-2 border-gray-300 cursor-pointer hover:border-b-2 hover:border-red-700 hover:transition-all hover:duration-200 hover:text-gray-500 sm:py-0"
+          >
             <a class="text-xl" href="">Servicios</a>
           </li>
-          <li class="py-2 border-b border-gray-300">
+          <li
+            class="py-2 border-b-2 border-gray-300 cursor-pointer hover:border-b-2 hover:border-red-700 hover:transition-all hover:duration-200 hover:text-gray-500 sm:py-0"
+          >
             <a class="text-xl" href="">Habilidades</a>
           </li>
-          <li class="py-2 border-b border-gray-300">
+          <li
+            class="py-2 border-b-2 border-gray-300 cursor-pointer hover:border-b-2 hover:border-red-700 hover:transition-all hover:duration-200 hover:text-gray-500 sm:py-0"
+          >
             <a class="text-xl" href="">Trabajos</a>
           </li>
-          <li class="py-2 border-b border-gray-300">
+          <li
+            class="py-2 border-b-2 border-gray-300 cursor-pointer hover:border-b-2 hover:border-red-700 hover:transition-all hover:duration-200 hover:text-gray-500 sm:py-0"
+          >
             <a class="text-xl" href="">Contacto</a>
           </li>
-          <li class="py-2 border-b border-gray-300">
-            <a class="text-xl" href="">Contrataciones</a>
+          <li class="py-6 border-b-2 border-gray-300 text-center sm:py-0">
+            <a
+              class="text-base font-bold bg-red-700 text-white px-11 py-3 uppercase rounded hover:bg-red-800"
+              href=""
+              >Contrataciones</a
+            >
           </li>
         </ul>
       </nav>
