@@ -26,35 +26,37 @@
 
       <div class="flex justify-center items-center">
         <span
-          class="icon-moon text-2xl mr-4 absolute top-7 right-10 cursor-pointer hover:text-gray-600 sm:static"
+          class="icon-moon text-2xl mr-4 absolute top-7 right-10 cursor-pointer hover:text-gray-600 sm:static sm:mr-0"
           id="dark-theme"
         ></span>
         <span
-          class="icon-sun text-2xl mr-4 absolute top-7 right-11 cursor-pointer hover:text-gray-600 invisible sm:static"
+          class="icon-sun text-2xl mr-4 absolute top-7 right-11 cursor-pointer hover:text-gray-600 invisible sm:static sm:mr-0"
           id="light-theme"
         ></span>
 
-        <p class="text-2xl right-6 sm:invisible sm:static-0" id="btn-menu">
+        <p class="text-2xl right-6 sm:invisible sm:hidden" id="btn-menu">
           <span
-            class="icon-menu ml-1 text-3xl relative top-2 cursor-pointer hover:text-gray-600 sm:static-0"
+            class="icon-menu ml-1 text-3xl relative top-2 cursor-pointer hover:text-gray-600"
           ></span>
         </p>
 
         <p
-          class="text-2xl invisible sm:invisible absolute right-2 top-3 sm:static-0"
+          class="text-2xl invisible sm:invisible absolute right-2 top-3 sm:hidden"
           id="btn-cancel"
         >
           <span
-            class="icon-cancel text-4xl relative top-3 right-1 cursor-pointer hover:text-gray-600 sm:static-0"
+            class="icon-cancel text-4xl relative top-3 right-1 cursor-pointer hover:text-gray-600"
           ></span>
         </p>
       </div>
 
       <nav
-        class="w-full flex flex-col justify-center items-center absolute -top-60 left-0 -z-10 transition-all duration-500 sm:static sm:z-0 sm:flex-row sm:w-auto"
+        class="w-full flex flex-col justify-center items-center absolute -top-60 left-0 -z-10 transition-all duration-500 sm:static sm:z-0 sm:w-auto"
         id="nav"
       >
-        <ul class="flex flex-col w-full px-5 sm:flex-row sm:px-0">
+        <ul
+          class="flex flex-col w-full px-5 sm:flex-row sm:justify-center sm:items-center sm:px-0 sm:w-auto sm:h-full"
+        >
           <li
             class="py-2 border-b-2 border-gray-300 cursor-pointer hover:border-b-2 hover:border-red-700 hover:transition-all hover:duration-200 hover:text-gray-500 sm:py-0"
           >
@@ -82,7 +84,7 @@
           </li>
           <li class="py-6 border-b-2 border-gray-300 text-center sm:py-0">
             <a
-              class="text-base font-bold bg-red-700 text-white px-11 py-3 uppercase rounded hover:bg-red-800"
+              class="text-base font-bold bg-red-700 text-white px-11 py-3 uppercase rounded hover:bg-red-800 sm:px-7"
               href=""
               >Contrataciones</a
             >
