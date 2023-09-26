@@ -15,39 +15,61 @@
     />
   </head>
   <body>
-    <header class="flex justify-between pt-2 pb-3 px-4 shadow-md">
+    <header
+      class="flex justify-between pt-2 pb-3 px-4 shadow-md relative z-auto bg-white"
+      id="header"
+    >
       <h1 class="text-3xl text-gray-500 font-sans font-bold leading-7">
         manuel <br />
         <span class="text-gray-800 tracking-wider">blanco</span>
       </h1>
 
       <div class="flex justify-center items-center">
-        <span class="icon-moon text-3xl mr-4 relative top-2"></span>
         <span
-          class="icon-sun text-3xl absolute right-32 top-7 invisible"
+          class="icon-moon text-2xl mr-4 absolute top-7 right-10 cursor-pointer hover:text-gray-600"
+          id="dark-theme"
+        ></span>
+        <span
+          class="icon-sun text-2xl mr-4 absolute top-7 right-11 cursor-pointer hover:text-gray-600 invisible"
+          id="light-theme"
         ></span>
 
-        <p class="text-2xl sm:invisible" id="btn-menu">
-          Menu<span class="icon-menu ml-1 text-3xl relative top-2"></span>
+        <p class="text-2xl right-6 sm:invisible" id="btn-menu">
+          <span
+            class="icon-menu ml-1 text-3xl relative top-2 cursor-pointer hover:text-gray-600"
+          ></span>
         </p>
 
-        <span
-          class="icon-cancel text-5xl absolute right-2 top-4 invisible"
-          id="btn-cancel"
-        ></span>
+        <p class="text-2xl invisible absolute right-2 top-3" id="btn-cancel">
+          <span
+            class="icon-cancel text-4xl relative top-3 right-1 cursor-pointer hover:text-gray-600"
+          ></span>
+        </p>
       </div>
 
       <nav
-        class="w-full flex flex-col justify-center items-center sm:visible absolute top-20 left-0 bg-indigo-600"
+        class="w-full flex flex-col justify-center items-center sm:visible absolute -top-52 left-0 -z-10 transition-all duration-500"
         id="nav"
       >
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Habilidades</a></li>
-          <li><a href="">Trabajos</a></li>
-          <li><a href="">Contacto</a></li>
-          <li><a href="">Contrataciones</a></li>
+        <ul class="w-full px-5">
+          <li class="py-2 border-b border-gray-300">
+            <a class="text-xl" href="">Home</a>
+          </li>
+          <li class="py-2 border-b border-gray-300">
+            <a class="text-xl" href="">Servicios</a>
+          </li>
+          <li class="py-2 border-b border-gray-300">
+            <a class="text-xl" href="">Habilidades</a>
+          </li>
+          <li class="py-2 border-b border-gray-300">
+            <a class="text-xl" href="">Trabajos</a>
+          </li>
+          <li class="py-2 border-b border-gray-300">
+            <a class="text-xl" href="">Contacto</a>
+          </li>
+          <li class="py-2 border-b border-gray-300">
+            <a class="text-xl" href="">Contrataciones</a>
+          </li>
         </ul>
       </nav>
     </header>
