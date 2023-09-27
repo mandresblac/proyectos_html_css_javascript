@@ -27,7 +27,10 @@ btnClose.addEventListener("click", () => {
 
 btnDarkTheme.addEventListener("click", () => {
   document.body.classList.add("bg-black", "text-white");
-  header.classList.add("bg-black", "text-white", "border-b"); // Para modificar el header
+  header.classList.remove("bg-white"); // Modifica el header
+  header.classList.add("bg-black", "text-white", "border-b"); // Modificar el header
+  document.querySelector("h1").classList.add("text-white"); // Modifica el h1
+  document.querySelector("h1 span").classList.add("text-white"); // Modifica el span dentro del h1
 
   // Para cambiar el icono del boton
   if (document.body.classList.contains("bg-black")) {
@@ -38,7 +41,10 @@ btnDarkTheme.addEventListener("click", () => {
 
 btnLightTheme.addEventListener("click", () => {
   document.body.classList.remove("bg-black", "text-white");
-  header.classList.remove("bg-black", "text-white", "shadow-white");
+  header.classList.remove("bg-black", "text-white", "border-b"); // Modifica el header
+  header.classList.add("bg-white"); // Modifica el header
+  document.querySelector("h1").classList.remove("text-white"); // Modifica el h1
+  document.querySelector("h1 span").classList.remove("text-white"); // Modifica el span dentro del h1
 
   // Para cambiar el icono del boton
   if (!document.body.classList.contains("bg-black")) {
