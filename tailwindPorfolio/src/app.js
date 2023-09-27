@@ -8,7 +8,7 @@ const nav = document.querySelector("#nav");
 
 /* -------- MOSTRAR Y OCULTAR MENU DE NAVEGACIÓN -------- */
 btnMenu.addEventListener("click", () => {
-  nav.classList.remove("-top-60");
+  nav.classList.remove("-top-64");
   nav.classList.add("top-20");
   btnMenu.classList.add("invisible");
   btnClose.classList.remove("invisible");
@@ -17,7 +17,7 @@ btnMenu.addEventListener("click", () => {
 btnClose.addEventListener("click", () => {
   if (nav.classList.contains("top-20")) {
     nav.classList.remove("top-20");
-    nav.classList.add("-top-60");
+    nav.classList.add("-top-64");
     btnClose.classList.add("invisible");
     btnMenu.classList.remove("invisible");
   }
