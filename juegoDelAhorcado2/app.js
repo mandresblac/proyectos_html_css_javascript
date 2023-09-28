@@ -19,7 +19,7 @@ let wordToGuess = "";
 // Array de guiones bajos que representan las letras no adivinadas de la palabra
 let guessedLetters = [];
 
-// Hace seguimiento de la cantidad de letras incorrectas que ha hecho el jugador.
+// Hace seguimiento de la cantidad de letras incorrectas que ha elegido el jugador.
 let wrongGuesses = 0;
 
 // Determina qué imagen de Melting Snowman mostrar.
@@ -41,7 +41,7 @@ function initializeGame() {
 
   updateMeltingSnowmanGraphic();
 
-  // Eliminar cualquier botón generado previamente
+  // Elimina cualquier botón generado previamente
   const lettersContainer = document.querySelector(".letters");
   while (lettersContainer.firstChild) {
     lettersContainer.removeChild(lettersContainer.firstChild);
@@ -58,7 +58,7 @@ function initializeGame() {
     lettersContainer.appendChild(button);
   }
 
-  // Borrr cualquier mensaje anterior de ganar/perder
+  // Borra cualquier mensaje anterior de ganar/perder
   const messageContainer = document.querySelector(".message");
   messageContainer.innerText = "";
 }
