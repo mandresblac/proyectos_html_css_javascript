@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.acordeon input {
+  display: none;
+}
+
+.acordeon__titulo {
+  display: block;
+  padding: 15px;
+  background-color: crimson;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+
+.acordeon__titulo:hover {
+  background-color: rgba(220, 20, 60, 0.8);
+}
+
+.acordeon__contenido {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+/* La pseudoclase checked se activa en el momento en que se hace clck sobre el input radio */
+.acordeon input:checked ~ .acordeon__contenido {
+  height: auto;
+  margin: 15px 0;
+}
