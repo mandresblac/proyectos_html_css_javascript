@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.calculator {
+  background-color: #001f29;
+  margin: 50px auto;
+  max-width: 350px;
+  height: 480px;
+  border-radius: 25px;
+  border: 1px solid #000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.calculator__display {
+  grid-area: display;
+  background-color: #a6be8a;
+  margin: 25px auto 0;
+  width: 84%;
+  height: 75px;
+  border-radius: 3px;
+}
+
+.calculator__display1 {
+  font-size: 2.1rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.calculator__keyboard {
+  margin: 27px auto;
+  width: 84%;
+  height: 67%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "ac del multipli division"
+    "siete ocho nueve mas"
+    "cuatro cinco seis menos"
+    "uno dos tres igual"
+    "punto cero porciento igual";
+  gap: 12px;
+}
+
+.calculator__key {
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.calculator__key:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ------------ TECLAS ------------ */
+.cero {
+  grid-area: cero;
+  background-color: #7f888b;
+}
+
+.uno {
+  grid-area: uno;
+  background-color: #7f888b;
+}
+
+.dos {
+  grid-area: dos;
+  background-color: #7f888b;
+}
+
+.tres {
+  grid-area: tres;
+  background-color: #7f888b;
+}
+
+.cuatro {
+  grid-area: cuatro;
+  background-color: #7f888b;
+}
+
+.cinco {
+  grid-area: cinco;
+  background-color: #7f888b;
+}
+
+.seis {
+  grid-area: seis;
+  background-color: #7f888b;
+}
+
+.siete {
+  grid-area: siete;
+  background-color: #7f888b;
+}
+
+.ocho {
+  grid-area: ocho;
+  background-color: #7f888b;
+}
+
+.nueve {
+  grid-area: nueve;
+  background-color: #7f888b;
+}
+
+.mas {
+  grid-area: mas;
+  background-color: #40474f;
+}
+
+.menos {
+  grid-area: menos;
+  background-color: #40474f;
+}
+
+.multiplica {
+  grid-area: multipli;
+  background-color: #40474f;
+}
+
+.division {
+  grid-area: division;
+  background-color: #40474f;
+}
+
+.porciento {
+  grid-area: porciento;
+  background-color: #40474f;
+}
+
+.igual {
+  grid-area: igual;
+  background-color: #ff6508;
+}
+
+.ac {
+  grid-area: ac;
+  background-color: #ff0a09;
+}
+
+.del {
+  grid-area: del;
+  background-color: #ff0a09;
+}
+
+.punto {
+  grid-area: punto;
+  background-color: #7f888b;
+}
