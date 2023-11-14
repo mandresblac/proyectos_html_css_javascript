@@ -49,3 +49,12 @@ buttons.forEach((boton) => {
     }
   });
 });
+
+/* 
+Video de ayuda
+https://www.youtube.com/watch?v=hZFEgkrOwks 
+
+
+Video informativo función eval() de Javascript
+https://www.youtube.com/watch?v=-v6ME3VQmyY
+*/
