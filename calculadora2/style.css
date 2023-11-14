@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #bfdbf7;
+}
+
 .calculator {
   background-color: #001f29;
   margin: 50px auto;
@@ -27,14 +31,29 @@
   width: 84%;
   height: 75px;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .calculator__display1 {
-  font-size: 2.1rem;
-  font-family: sans-serif;
+  /* height: 50%; */
+  line-height: 40px;
+  font-size: 2.4rem;
+  font-family: monospace;
   cursor: pointer;
   text-align: right;
-  margin-right: 5px;
+  margin: 0 6px 0 0;
+}
+
+.calculator__display2 {
+  /* height: 50%; */
+  line-height: 33px;
+  font-size: 2.8rem;
+  font-family: monospace;
+  cursor: pointer;
+  text-align: right;
+  margin: 0 6px 0 0;
 }
 
 .calculator__keyboard {
@@ -162,4 +181,19 @@
 .punto {
   grid-area: punto;
   background-color: #7f888b;
+}
+
+/* ---------- MODIFICA TEXTO DEL BUTTON MULTIPLICAR DEL HTML */
+.multiplica {
+  position: relative;
+  color: transparent; /* Oculta el asterisco */
+}
+
+/* pseudo-elemento ::before para generar la "X" del boton de multiplicas  */
+.multiplica::before {
+  content: "x";
+  position: absolute;
+  top: 14px;
+  right: 26px;
+  color: white; /* Muestr la x */
 }
