@@ -183,7 +183,7 @@ body {
   background-color: #7f888b;
 }
 
-/* ---------- MODIFICA TEXTO DEL BUTTON MULTIPLICAR DEL HTML */
+/* ---------- MODIFICA TEXTO DEL BUTTON MULTIPLICAR DE "*" a "x" */
 .multiplica {
   position: relative;
   color: transparent; /* Oculta el asterisco */
@@ -193,7 +193,7 @@ body {
 .multiplica::before {
   content: "x";
   position: absolute;
+  color: white; /* Muestra la x */
   top: 14px;
   right: 26px;
-  color: white; /* Muestra la x */
 }
