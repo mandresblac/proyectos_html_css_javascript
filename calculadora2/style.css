@@ -11,6 +11,7 @@ body {
 }
 
 .calculator {
+  position: relative;
   background-color: #001f29;
   margin: 50px auto;
   max-width: 350px;
