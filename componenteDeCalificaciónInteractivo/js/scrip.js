@@ -6,14 +6,22 @@ const boton = document.querySelector("#boton");
 
 boton.addEventListener("click", (e) => {
   e.preventDefault(); // Previene la recarga automatica del forulario Html
-  const input = document.getElementsByName("calification"); // inputs tipo radio
+
+  const inputs = document.getElementsByName("calification"); // inputs tipo radio
   let seleccionado = false;
 
-  input.forEach((element) => {
-    if (element.checked) {
+  inputs.forEach((input) => {
+    if (input.checked) {
       seleccionado = true;
       card1.classList.toggle("ocultar-card");
       card2.classList.toggle("mostrar-card");
+    } else {
+      boton.value = "Choose a number";
+
+      // Despues de 1.5 segundos vuelve el texto "SUBMIT"
+      setTimeout(() => {
+        boton.value = "SUBMIT";
+      }, 1500);
     }
   });
 });
