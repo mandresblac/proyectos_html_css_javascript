@@ -2,7 +2,7 @@
 const card1 = document.querySelector("#card__container1");
 const card2 = document.querySelector("#card__container2");
 const boton = document.querySelector("#boton");
-// const
+const textSelection = document.querySelector("#card__subtitle");
 
 boton.addEventListener("click", (e) => {
   e.preventDefault(); // Previene la recarga automatica del forulario Html
@@ -15,6 +15,9 @@ boton.addEventListener("click", (e) => {
       seleccionado = true;
       card1.classList.toggle("ocultar-card");
       card2.classList.toggle("mostrar-card");
+
+      // Muestra el input de tipo radio seleccionado por el usuario
+      textSelection.textContent = `You selected ${input.value} out of 5`;
     } else {
       boton.value = "Choose a number";
 
