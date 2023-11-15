@@ -70,7 +70,7 @@ body {
   justify-content: space-between;
 }
 
-.card__calification {
+.card__rating label {
   background-color: hsl(210, 10%, 24%);
   width: 2.7rem;
   height: 2.7rem;
@@ -79,10 +79,23 @@ body {
   text-align: center;
   font-size: 15px;
   cursor: pointer;
+  user-select: none; /* Para evitar que el usuario pueda seleccionar el texto  */
 }
 
-.card__calification:hover {
+.card__rating label:hover {
   background-color: var(--orange);
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+/* Para ocultar el input radio nativo */
+.card__rating [type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.card__rating [type="radio"]:checked + label {
+  background-color: var(--medium-grey);
   color: var(--white);
 }
 
@@ -106,6 +119,7 @@ body {
   background-color: var(--white);
   color: var(--orange);
   font-weight: 700;
+  transition: all 0.5s;
 }
 
 /* ------------ CLASES UTILIZADAS EN JAVASCRIPT */
