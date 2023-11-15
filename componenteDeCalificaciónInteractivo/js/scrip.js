@@ -3,20 +3,20 @@ const btnRating = document.querySelectorAll("#card__calification");
 
 btnRating.forEach((boton) => {
   boton.addEventListener("click", () => {
-    // boton.classList.toggle("fondo_gris");
+    boton.classList.toggle("fondo_gris");
     // console.log(boton);
 
-    if (boton.classList.contains("fondo_gris")) {
-      let botonActivo = boton.includes(boton.classList.contains("fondo_gris"));
-      console.log(botonActivo);
+    // if (boton.classList.contains("fondo_gris")) {
+    //   let botonActivo = boton.includes(boton.classList.contains("fondo_gris"));
+    //   console.log(botonActivo);
 
-      // boton.classList.toggle("fondo_gris");
-      // console.log(boton);
-      // boton.classList.remove("fondo_gris");
-    } else {
-      boton.classList.remove("fondo_gris");
-      // return;
-    }
+    //   // boton.classList.toggle("fondo_gris");
+    //   // console.log(boton);
+    //   // boton.classList.remove("fondo_gris");
+    // } else {
+    //   boton.classList.remove("fondo_gris");
+    //   // return;
+    // }
   });
 });
 
