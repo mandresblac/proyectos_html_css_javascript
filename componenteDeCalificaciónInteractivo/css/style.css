@@ -25,7 +25,10 @@ body {
   align-items: center;
 }
 
+/* ------------- CARD CONTAINER 1 ------------- */
+
 .card {
+  position: relative;
   background-color: var(--dark-blue);
   width: 321px;
   border-radius: 15px;
@@ -122,9 +125,60 @@ body {
   transition: all 0.5s;
 }
 
-/* ------------ CLASES UTILIZADAS EN JAVASCRIPT */
+/* ------------- CARD CONTAINER 2 ------------- */
+.card__container2 {
+  position: absolute;
+  margin: 1.6rem 1.6rem;
+  background-color: var(--dark-blue);
+  top: 0px;
+  right: 0;
 
-.fondo_gris {
-  background-color: var(--light-grey);
-  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.card__image2 {
+  width: 50%;
+  margin: 10px;
+}
+
+.card__subtitle {
+  background-color: hsl(210, 10%, 24%);
+  color: var(--orange);
+  font-size: 14px;
+  margin: 20px 0;
+  padding: 8px 10px;
+  border-radius: 50px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.card__title2 {
+  color: var(--white);
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.card__paragraph2 {
+  color: var(--medium-grey);
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+/* ------------ CLASES UTILIZADAS EN JAVASCRIPT ------------ */
+.ocultar-card {
+  visibility: hidden;
+}
+
+.mostrar-card {
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+/* 
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+*/

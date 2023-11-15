@@ -25,8 +25,8 @@
     />
   </head>
   <body>
-    <div class="card">
-      <div class="card__container1">
+    <div class="card" id="card">
+      <form class="card__container1" id="card__container1">
         <div class="card__image"></div>
         <h2 class="card__title">How did we do?</h2>
         <p class="card__paragraph">
@@ -76,21 +76,34 @@
           <label for="card__calification5"> 5 </label>
         </div>
 
-        <input type="submit" value="Submit" class="card__button" />
+        <input type="submit" value="Submit" class="card__button" id="boton" />
+      </form>
+
+      <div class="card__container2 ocultar-card" id="card__container2">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="imagen"
+          class="card__image2"
+        />
+        <h3 class="card__subtitle" id="card__subtitle">
+          You selected 4 out of 5
+        </h3>
+        <h2 class="card__title2">Thank you!</h2>
+        <p class="card__paragraph2">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
       </div>
     </div>
-
-    <!--  1 2 3 4 5 Submit -->
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
 
-    <!-- You selected -->
+    <!--  -->
 
     <!-- Add rating here -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
+    <!-- out of 5 Thank you!  -->
 
     <!-- Thank you state end -->
 

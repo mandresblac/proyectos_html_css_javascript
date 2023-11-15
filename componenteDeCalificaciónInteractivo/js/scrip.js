@@ -1,25 +1,19 @@
-const btnRating = document.querySelectorAll("#card__calification");
-// console.log(btnRating);
+// const card = document.querySelector("#card");
+const card1 = document.querySelector("#card__container1");
+const card2 = document.querySelector("#card__container2");
+const boton = document.querySelector("#boton");
+// const
 
-btnRating.forEach((boton) => {
-  boton.addEventListener("click", () => {
-    boton.classList.toggle("fondo_gris");
-    // console.log(boton);
+boton.addEventListener("click", (e) => {
+  e.preventDefault(); // Previene la recarga automatica del forulario Html
+  const input = document.getElementsByName("calification"); // inputs tipo radio
+  let seleccionado = false;
 
-    // if (boton.classList.contains("fondo_gris")) {
-    //   let botonActivo = boton.includes(boton.classList.contains("fondo_gris"));
-    //   console.log(botonActivo);
-
-    //   // boton.classList.toggle("fondo_gris");
-    //   // console.log(boton);
-    //   // boton.classList.remove("fondo_gris");
-    // } else {
-    //   boton.classList.remove("fondo_gris");
-    //   // return;
-    // }
+  input.forEach((element) => {
+    if (element.checked) {
+      seleccionado = true;
+      card1.classList.toggle("ocultar-card");
+      card2.classList.toggle("mostrar-card");
+    }
   });
 });
-
-/* btnRating.some((boton) => {
-  boton === boton.classList.contains("fondo_gris");
-}); */
