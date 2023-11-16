@@ -1,8 +1,8 @@
-// const card = document.querySelector("#card");
 const card1 = document.querySelector("#card__container1");
 const card2 = document.querySelector("#card__container2");
 const boton = document.querySelector("#boton");
 const textSelection = document.querySelector("#card__subtitle");
+const btnBack = document.querySelector("#btn-return");
 
 boton.addEventListener("click", (e) => {
   e.preventDefault(); // Previene la recarga automatica del forulario Html
@@ -27,4 +27,10 @@ boton.addEventListener("click", (e) => {
       }, 1500);
     }
   });
+});
+
+btnBack.addEventListener("click", () => {
+  card2.classList.remove("mostrar-card");
+  card1.classList.remove("ocultar-card");
+  document.querySelector("#card__container1").reset(); // Resetea el formulario
 });
