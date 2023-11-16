@@ -128,15 +128,15 @@ body {
 /* ------------- CARD CONTAINER 2 ------------- */
 .card__container2 {
   position: absolute;
-  margin: 1.6rem 1.6rem;
   background-color: var(--dark-blue);
   top: 0px;
-  right: 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 383px;
+  border-radius: 15px;
+  padding: 1.6rem;
 }
 
 .card__image2 {

@@ -5,14 +5,12 @@ const textSelection = document.querySelector("#card__subtitle");
 const btnBack = document.querySelector("#btn-return");
 
 boton.addEventListener("click", (e) => {
-  e.preventDefault(); // Previene la recarga automatica del forulario Html
+  e.preventDefault(); // Previene la recarga automatica del formulario Html
 
   const inputs = document.getElementsByName("calification"); // inputs tipo radio
-  let seleccionado = false;
 
   inputs.forEach((input) => {
     if (input.checked) {
-      seleccionado = true;
       card1.classList.toggle("ocultar-card");
       card2.classList.toggle("mostrar-card");
 
