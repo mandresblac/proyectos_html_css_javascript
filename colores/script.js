@@ -48,3 +48,11 @@ function quitarColorYMensaje(color) {
   cuadro.style.background = `${color}`;
   cuadro.textContent = "";
 }
+
+/* 
+MOUSEOVER:
+El evento mouseover se dispara cuando el cursor del mouse (o flecha) se posiciona sobre un elemento que tiene registrado dicho evento.
+
+MOUSEOUT:
+El evento mouseout se dispara cuando quitamos el cursor del mouse (o flecha) del elemento que tiene registrado dicho evento.
+*/
