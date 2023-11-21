@@ -4,6 +4,7 @@ const green = document.querySelector("#green");
 const yellow = document.querySelector("#yellow");
 const orange = document.querySelector("#orange");
 const red = document.querySelector("#red");
+const magenta = document.querySelector("#magenta");
 
 const cuadro = document.querySelector("#square");
 
@@ -28,6 +29,11 @@ orange.addEventListener("mouseout", () => quitarColorYMensaje("white"));
 
 red.addEventListener("mouseover", () => agregarColorYMensaje("red", "Red"));
 red.addEventListener("mouseout", () => quitarColorYMensaje("white"));
+
+magenta.addEventListener("mouseover", () =>
+  agregarColorYMensaje("magenta", "magenta")
+);
+magenta.addEventListener("mouseout", () => quitarColorYMensaje("white"));
 
 // ------------------------ FUNCIONES ------------------------ //
 function agregarColorYMensaje(color, mensaje) {
