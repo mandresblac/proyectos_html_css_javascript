@@ -34,6 +34,9 @@ function agregarColorYMensaje(color, mensaje) {
   //Agregamos color
   cuadro.style.background = `${color}`;
 
+  //Agregamos una transición de 0.3 segundos
+  cuadro.style.transition = "0.4s";
+
   //Agregamos el mensaje
   const parrafo = document.createElement("p");
   parrafo.textContent = `${mensaje}`;
