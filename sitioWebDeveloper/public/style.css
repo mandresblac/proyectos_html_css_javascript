@@ -87,7 +87,7 @@ h3 {
   display: none;
 }
 
-.nav .menu {
+.menu {
   display: flex;
 }
 
@@ -141,9 +141,10 @@ h3 {
     text-align: center;
   }
 
-  .nav .menu {
+  .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
     row-gap: 1rem;
   }
@@ -179,6 +180,12 @@ h3 {
     font-size: 2.2rem;
   }
 
+  .nav {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .nav .btn-menu {
     display: block;
     padding: 0;
@@ -201,18 +208,23 @@ h3 {
     /* background-color: ; */
   }
 
-  .nav .menu {
+  .menu {
+    position: absolute;
+    background-color: #0b0c13;
+    width: 400%;
+    top: 77px;
+    transform: translateX(-331px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
+    border-bottom-right-radius: 10px;
   }
 
-  .nav .menu {
-    display: none;
-    /*display: flex;
-    flex-direction: column;
-    align-items: start; */
+  .mostrar-menu {
+    transform: translateX(-148px);
+    transition: all 0.5s;
   }
 
   /* .header {
